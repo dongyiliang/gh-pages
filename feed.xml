@@ -3,12 +3,68 @@
     <title>dzcms</title>
     <link href="https://dongyiliang.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://dongyiliang.github.io/gh-pages" />
-    <updated>2022-05-06T23:16:14+08:00</updated>
+    <updated>2022-05-06T23:55:44+08:00</updated>
     <author>
         <name>yiliang.dong</name>
     </author>
     <id>https://dongyiliang.github.io/gh-pages</id>
 
+    <entry>
+        <title>MySQL安装和配置</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/mysqlpei-zhi.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/mysqlpei-zhi.html</id>
+            <category term="server"/>
+
+        <updated>2022-05-06T23:55:44+08:00</updated>
+            <summary>
+                <![CDATA[
+                    下载解压版压缩包 https://downloads.mysql.com/archives/community/ [client] port=3306 default-character-set=utf8 [mysqld] port=3306 character_set_server=utf8 basedir =D:\apps\mysql-5.7.19-winx64 datadir =D:\data\mysqldata mysqld –install mysqld –initialize –user=root –console 初始化后将在datadir中生成对应的数据库文件 net start mysql mysql -u root -p set password = password('新密码') ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’ (using password: YES) 在my.ini加一行 skip-grant-tables 这次登录跳过权限,等操作全部完成之后再删掉这一行。
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <ul>
+<li>下载解压版压缩包</li>
+</ul>
+<p><a href="https://downloads.mysql.com/archives/community/">https://downloads.mysql.com/archives/community/</a></p>
+<p> </p>
+<ul>
+<li>解压后新建my.ini文件</li>
+</ul>
+<p><code>[client] <br>port=3306 <br>default-character-set=utf8 <br>[mysqld] <br>port=3306 <br>character_set_server=utf8 <br>basedir =D:\apps\mysql-5.7.19-winx64<br>datadir =D:\data\mysqldata</code></p>
+<ul>
+<li>使用管理员权限打开cmd命令，进入Mysql的bin目录，运行安装命令</li>
+</ul>
+<p><code>mysqld –install</code></p>
+<ul>
+<li>运行初始化命令</li>
+</ul>
+<p><code>mysqld –initialize –user=root –console</code></p>
+<p>初始化后将在datadir中生成对应的数据库文件</p>
+<ul>
+<li>启动mysql</li>
+</ul>
+<p><code>net start mysql</code></p>
+<ul>
+<li>用root登录</li>
+</ul>
+<p><code>mysql -u root -p</code></p>
+<ul>
+<li>修改root密码</li>
+</ul>
+<p><code>set password = password('新密码')</code></p>
+<ul>
+<li>如果修改密码报错</li>
+</ul>
+<p><code>ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’ (using password: YES)</code></p>
+<p>在my.ini加一行<br>skip-grant-tables 这次登录跳过权限,等操作全部完成之后再删掉这一行。</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>开篇</title>
         <author>
