@@ -9,5 +9,19 @@
         "name": "yiliang.dong"
     },
     "items": [
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/kai-pian.html",
+            "url": "https://dongyiliang.github.io/gh-pages/kai-pian.html",
+            "title": "开篇",
+            "summary": "万事开头难",
+            "content_html": "<p>万事开头难</p>\n",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-05-06T23:16:14+08:00",
+            "date_modified": "2022-05-06T23:16:14+08:00"
+        }
     ]
 }
