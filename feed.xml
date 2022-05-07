@@ -3,7 +3,7 @@
     <title>dzcms</title>
     <link href="https://dongyiliang.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://dongyiliang.github.io/gh-pages" />
-    <updated>2022-05-06T23:55:44+08:00</updated>
+    <updated>2022-05-07T11:59:41+08:00</updated>
     <author>
         <name>yiliang.dong</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://dongyiliang.github.io/gh-pages/mysqlpei-zhi.html</id>
             <category term="server"/>
 
-        <updated>2022-05-06T23:55:44+08:00</updated>
+        <updated>2022-05-07T11:59:41+08:00</updated>
             <summary>
                 <![CDATA[
                     下载解压版压缩包 https://downloads.mysql.com/archives/community/ [client] port=3306 default-character-set=utf8 [mysqld] port=3306 character_set_server=utf8 basedir =D:\apps\mysql-5.7.19-winx64 datadir =D:\data\mysqldata mysqld –install mysqld –initialize –user=root –console 初始化后将在datadir中生成对应的数据库文件 net start mysql mysql -u root -p set password = password('新密码') ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’ (using password: YES) 在my.ini加一行 skip-grant-tables 这次登录跳过权限,等操作全部完成之后再删掉这一行。

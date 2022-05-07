@@ -1,0 +1,25 @@
+{
+	"name": "Meta Tab Colors",
+	"description": "This plugin allows you to specify the tab color in mobile browsers and Safari >= 15",
+	"license": "GPL-3.0",
+	"author": "Dziudek",
+	"version": "0.0.1",
+	"scope": "site",
+	"minimumPubliiVersion": "0.39.0",
+	"config": [
+		{
+            "name": "defaultColor",
+            "label": "Default color",
+            "group": "Colors",
+            "value": "#D73A42",
+            "type": "colorpicker"
+        },             
+        {
+            "name": "darkModeColor",
+            "label": "Dark mode color",
+            "group": "Colors",
+            "value": "#17181E",
+            "type": "colorpicker"
+        }
+	]
+}
