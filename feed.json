@@ -10,9 +10,39 @@
     },
     "items": [
         {
+            "id": "https://dongyiliang.github.io/gh-pages/mysqljian-ku-yong-hu-he-dao-ru-dao-chu.html",
+            "url": "https://dongyiliang.github.io/gh-pages/mysqljian-ku-yong-hu-he-dao-ru-dao-chu.html",
+            "title": "mysql建库用户和导入导出",
+            "summary": "1、用root登录mysql mysql --host localhost -uroot -p 2、执行建库和用户命令 create database ado; CREATE USER 'ado'@'localhost' IDENTIFIED WITH mysql_native_password BY '*******'; grant all on ado.* to 'ado'@'localhost'; 3、建立连接sql.bat mysql --host localhost -uado -p\"******\" ado 4、使用建表文件初始化数据库，如有 mysql -h localhost -u ado -p\"****\" ado&lt; D:\\data\\dzbm\\db\\backup_20201221.sql 5、建立dbbk.bat用于数据备份，导入还原参考步骤4 set d=%date:~0,10% set d=%d:/=%&hellip;",
+            "content_html": "\n  <p>\n    1、用root登录mysql\n  </p>\n<pre class=\"line-numbers  language-objectObject\"><code>mysql --host localhost -uroot -p</code></pre>\n\n  <p>\n    2、执行建库和用户命令\n  </p>\n<pre class=\"line-numbers  language-objectObject\"><code>create database ado;\nCREATE USER 'ado'@'localhost' IDENTIFIED WITH mysql_native_password BY '*******';\ngrant all on ado.* to 'ado'@'localhost';</code></pre>\n\n  <p>\n    3、建立连接sql.bat\n  </p>\n<pre class=\"line-numbers  language-objectObject\"><code>mysql --host localhost -uado -p\"******\" ado</code></pre>\n\n  <p>\n    4、使用建表文件初始化数据库，如有\n  </p>\n<pre class=\"line-numbers  language-objectObject\"><code>mysql -h localhost -u ado -p\"****\" ado&lt; D:\\data\\dzbm\\db\\backup_20201221.sql</code></pre>\n\n  <p>\n    5、建立dbbk.bat用于数据备份，导入还原参考步骤4\n  </p>\n<pre class=\"line-numbers  language-objectObject\"><code>set d=%date:~0,10%\nset d=%d:/=%\nset d=%d: =0%\necho \"%d%\"\n\nmysqldump -h localhost -u ado -p\"****\" ado &gt; D:\\data\\dzbm\\db\\backup_%d%.sql</code></pre>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "mysql"
+            ],
+            "date_published": "2022-05-07T21:33:56+08:00",
+            "date_modified": "2022-05-07T21:35:34+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/adf.html",
+            "url": "https://dongyiliang.github.io/gh-pages/adf.html",
+            "title": "mysql安装和配置",
+            "summary": "1、下载安装包 https://downloads.mysql.com/archives/community/ 2、解压后，在目录下新建my.ini文件 [client] port=3306 default-character-set=utf8 [mysqld] port=3306 character_set_server=utf8 basedir =D:\\apps\\mysql-5.7.19-winx64 datadir =D:\\data\\mysqldata 3、使用管理员权限打开cmd命令，进入Mysql的bin目录，运行安装命令 mysqld –install 4、运行初始化命令 mysqld –initialize –user=root –console 初始化后将在上面的datadir目录生成对应的数据库文件 5、启动mysql net start mysql 6、用root登录mysql mysql -u root -p 7、修改root密码 set password = password('新密码') 8、如果修改密码报错 ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’&hellip;",
+            "content_html": "\n  <p>\n    1、下载安装包\n  </p>\n\n  <p>\n    https://downloads.mysql.com/archives/community/\n  </p>\n\n  <p>\n    2、解压后，在目录下新建my.ini文件\n  </p>\n<pre class=\"line-numbers  language-ini\"><code>[client] \nport=3306 \ndefault-character-set=utf8 \n[mysqld] \nport=3306 \ncharacter_set_server=utf8 \nbasedir =D:\\apps\\mysql-5.7.19-winx64\ndatadir =D:\\data\\mysqldata\n</code></pre>\n\n  <p>\n    3、使用管理员权限打开cmd命令，进入Mysql的bin目录，运行安装命令\n  </p>\n<pre class=\"line-numbers  language-batch\"><code>mysqld –install</code></pre>\n\n  <p>\n    4、运行初始化命令\n  </p>\n<pre class=\"line-numbers  language-batch\"><code>mysqld –initialize –user=root –console\n</code></pre>\n\n  <p>\n    初始化后将在上面的datadir目录生成对应的数据库文件\n  </p>\n\n  <p>\n    5、启动mysql\n  </p>\n<pre class=\"line-numbers  language-batch\"><code>net start mysql</code></pre>\n\n  <p>\n    6、用root登录mysql\n  </p>\n<pre class=\"line-numbers  language-batch\"><code>mysql -u root -p</code></pre>\n\n  <p>\n    7、修改root密码\n  </p>\n<pre class=\"line-numbers  language-batch\"><code>set password = password('新密码')</code></pre>\n\n  <p>\n    8、如果修改密码报错\n  </p>\n<pre class=\"line-numbers  language-[object Object]\"><code>ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’ (using password: YES)\n</code></pre>\n\n  <p>\n    在my.ini加一行\n  </p>\n<pre class=\"line-numbers  language-null\"><code>skip-grant-tables</code></pre>\n\n  <p>\n    这次登录跳过权限,等操作全部完成之后再删掉这一行。\n  </p>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "mysql"
+            ],
+            "date_published": "2022-05-07T21:02:29+08:00",
+            "date_modified": "2022-05-07T21:27:31+08:00"
+        },
+        {
             "id": "https://dongyiliang.github.io/gh-pages/eclipsezhong-lombokcha-jian-an-zhuang-pei-zhi.html",
             "url": "https://dongyiliang.github.io/gh-pages/eclipsezhong-lombokcha-jian-an-zhuang-pei-zhi.html",
-            "title": "Eclipse中Lombok插件安装配置",
+            "title": "eclipse中lombok插件安装配置",
             "summary": "Lombok是一个java库，可以自动插入到编辑器和构建工具中，提高java的性能。 永远不要再编写另一个getter或equals方法，使用一个注释，你的类就有了一个功能齐全的生成器，自动化了你的日志变量，等等。 https://projectlombok.org/download -javaagent:D:\\apps\\eclipse\\eclipse-jee-2020-09\\lombok.jar 重启eclipse",
             "content_html": "<p>Lombok是一个java库，可以自动插入到编辑器和构建工具中，提高java的性能。<br><br>永远不要再编写另一个getter或equals方法，使用一个注释，你的类就有了一个功能齐全的生成器，自动化了你的日志变量，等等。</p>\n<ul>\n<li>下载地址</li>\n</ul>\n<p> </p>\n<p><a href=\"https://projectlombok.org/download\">https://projectlombok.org/download</a></p>\n<ul>\n<li>双击下载的lombok.jar安装</li>\n</ul>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://dongyiliang.github.io/gh-pages/media/posts/5/LombokInstaller.png\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-xs.png 300w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-sm.png 480w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-md.png 768w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-lg.png 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-xl.png 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-2xl.png 1600w\"  alt=\"Lombok安装图\" width=\"833\" height=\"482\"></figure>\n<ul>\n<li>选择本地的eclipse安装路径安装</li>\n</ul>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://dongyiliang.github.io/gh-pages/media/posts/5/LombokInstaller_step2.png\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-xs.png 300w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-sm.png 480w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-md.png 768w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-lg.png 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-xl.png 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-2xl.png 1600w\"  alt=\"\" width=\"716\" height=\"450\"></figure>\n<ul>\n<li>用文本打开eclipse.ini文件，在文件末尾添加：</li>\n</ul>\n<p><code>-javaagent:D:\\apps\\eclipse\\eclipse-jee-2020-09\\lombok.jar</code></p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://dongyiliang.github.io/gh-pages/media/posts/5/LombokInstaller_step3.png\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-xs.png 300w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-sm.png 480w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-md.png 768w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-lg.png 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-xl.png 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-2xl.png 1600w\"  alt=\"\" width=\"940\" height=\"447\"></figure>\n<ul>\n<li>重启eclipse</li>\n</ul>",
             "author": {
@@ -22,7 +52,7 @@
                    "eclipse"
             ],
             "date_published": "2022-05-07T17:10:27+08:00",
-            "date_modified": "2022-05-07T17:19:44+08:00"
+            "date_modified": "2022-05-07T21:28:53+08:00"
         },
         {
             "id": "https://dongyiliang.github.io/gh-pages/mavenkong-bai-xiang-mu-sheng-cheng.html",
@@ -38,21 +68,6 @@
             ],
             "date_published": "2022-05-07T17:07:01+08:00",
             "date_modified": "2022-05-07T17:23:35+08:00"
-        },
-        {
-            "id": "https://dongyiliang.github.io/gh-pages/mysqlpei-zhi.html",
-            "url": "https://dongyiliang.github.io/gh-pages/mysqlpei-zhi.html",
-            "title": "MySQL安装和配置",
-            "summary": "下载解压版压缩包 https://downloads.mysql.com/archives/community/ [client] port=3306 default-character-set=utf8 [mysqld] port=3306 character_set_server=utf8 basedir =D:\\apps\\mysql-5.7.19-winx64 datadir =D:\\data\\mysqldata mysqld –install mysqld –initialize –user=root –console 初始化后将在datadir中生成对应的数据库文件 net start mysql mysql -u root -p set password = password('新密码') ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’ (using password: YES) 在my.ini加一行 skip-grant-tables 这次登录跳过权限,等操作全部完成之后再删掉这一行。",
-            "content_html": "<ul>\n<li>下载解压版压缩包</li>\n</ul>\n<p><a href=\"https://downloads.mysql.com/archives/community/\">https://downloads.mysql.com/archives/community/</a></p>\n<p> </p>\n<ul>\n<li>解压后新建my.ini文件</li>\n</ul>\n<p><code>[client] <br>port=3306 <br>default-character-set=utf8 <br>[mysqld] <br>port=3306 <br>character_set_server=utf8 <br>basedir =D:\\apps\\mysql-5.7.19-winx64<br>datadir =D:\\data\\mysqldata</code></p>\n<ul>\n<li>使用管理员权限打开cmd命令，进入Mysql的bin目录，运行安装命令</li>\n</ul>\n<p><code>mysqld –install</code></p>\n<ul>\n<li>运行初始化命令</li>\n</ul>\n<p><code>mysqld –initialize –user=root –console</code></p>\n<p>初始化后将在datadir中生成对应的数据库文件</p>\n<ul>\n<li>启动mysql</li>\n</ul>\n<p><code>net start mysql</code></p>\n<ul>\n<li>用root登录</li>\n</ul>\n<p><code>mysql -u root -p</code></p>\n<ul>\n<li>修改root密码</li>\n</ul>\n<p><code>set password = password('新密码')</code></p>\n<ul>\n<li>如果修改密码报错</li>\n</ul>\n<p><code>ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’ (using password: YES)</code></p>\n<p>在my.ini加一行<br>skip-grant-tables 这次登录跳过权限,等操作全部完成之后再删掉这一行。</p>\n<p> </p>",
-            "author": {
-                "name": "yiliang.dong"
-            },
-            "tags": [
-                   "server"
-            ],
-            "date_published": "2022-05-06T23:54:50+08:00",
-            "date_modified": "2022-05-07T11:59:41+08:00"
         },
         {
             "id": "https://dongyiliang.github.io/gh-pages/kai-pian.html",
