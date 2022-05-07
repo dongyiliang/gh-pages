@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "dzcms",
+    "title": "ADO工具箱",
     "description": "",
     "home_page_url": "https://dongyiliang.github.io/gh-pages",
     "feed_url": "https://dongyiliang.github.io/gh-pages/feed.json",
@@ -9,6 +9,36 @@
         "name": "yiliang.dong"
     },
     "items": [
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/eclipsezhong-lombokcha-jian-an-zhuang-pei-zhi.html",
+            "url": "https://dongyiliang.github.io/gh-pages/eclipsezhong-lombokcha-jian-an-zhuang-pei-zhi.html",
+            "title": "Eclipse中Lombok插件安装配置",
+            "summary": "Lombok是一个java库，可以自动插入到编辑器和构建工具中，提高java的性能。 永远不要再编写另一个getter或equals方法，使用一个注释，你的类就有了一个功能齐全的生成器，自动化了你的日志变量，等等。 https://projectlombok.org/download -javaagent:D:\\apps\\eclipse\\eclipse-jee-2020-09\\lombok.jar 重启eclipse",
+            "content_html": "<p>Lombok是一个java库，可以自动插入到编辑器和构建工具中，提高java的性能。<br><br>永远不要再编写另一个getter或equals方法，使用一个注释，你的类就有了一个功能齐全的生成器，自动化了你的日志变量，等等。</p>\n<ul>\n<li>下载地址</li>\n</ul>\n<p> </p>\n<p><a href=\"https://projectlombok.org/download\">https://projectlombok.org/download</a></p>\n<ul>\n<li>双击下载的lombok.jar安装</li>\n</ul>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://dongyiliang.github.io/gh-pages/media/posts/5/LombokInstaller.png\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-xs.png 300w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-sm.png 480w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-md.png 768w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-lg.png 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-xl.png 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-2xl.png 1600w\"  alt=\"Lombok安装图\" width=\"833\" height=\"482\"></figure>\n<ul>\n<li>选择本地的eclipse安装路径安装</li>\n</ul>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://dongyiliang.github.io/gh-pages/media/posts/5/LombokInstaller_step2.png\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-xs.png 300w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-sm.png 480w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-md.png 768w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-lg.png 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-xl.png 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-2xl.png 1600w\"  alt=\"\" width=\"716\" height=\"450\"></figure>\n<ul>\n<li>用文本打开eclipse.ini文件，在文件末尾添加：</li>\n</ul>\n<p><code>-javaagent:D:\\apps\\eclipse\\eclipse-jee-2020-09\\lombok.jar</code></p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://dongyiliang.github.io/gh-pages/media/posts/5/LombokInstaller_step3.png\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-xs.png 300w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-sm.png 480w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-md.png 768w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-lg.png 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-xl.png 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-2xl.png 1600w\"  alt=\"\" width=\"940\" height=\"447\"></figure>\n<ul>\n<li>重启eclipse</li>\n</ul>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "eclipse"
+            ],
+            "date_published": "2022-05-07T17:10:27+08:00",
+            "date_modified": "2022-05-07T17:19:44+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/mavenkong-bai-xiang-mu-sheng-cheng.html",
+            "url": "https://dongyiliang.github.io/gh-pages/mavenkong-bai-xiang-mu-sheng-cheng.html",
+            "title": "maven空白项目生成",
+            "summary": "maven空项目生成 mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dzbt -Dversion=1.0.0 -DartifactId=dzbt",
+            "content_html": "<p>maven空项目生成</p>\n<p><code>mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dzbt -Dversion=1.0.0 -DartifactId=dzbt</code></p>\n<p> </p>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "maven"
+            ],
+            "date_published": "2022-05-07T17:07:01+08:00",
+            "date_modified": "2022-05-07T17:23:35+08:00"
+        },
         {
             "id": "https://dongyiliang.github.io/gh-pages/mysqlpei-zhi.html",
             "url": "https://dongyiliang.github.io/gh-pages/mysqlpei-zhi.html",
