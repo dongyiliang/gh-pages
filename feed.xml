@@ -3,12 +3,342 @@
     <title>ADO工具箱</title>
     <link href="https://dongyiliang.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://dongyiliang.github.io/gh-pages" />
-    <updated>2022-05-07T21:35:34+08:00</updated>
+    <updated>2022-05-08T13:30:32+08:00</updated>
     <author>
         <name>yiliang.dong</name>
     </author>
     <id>https://dongyiliang.github.io/gh-pages</id>
 
+    <entry>
+        <title>file-exists </title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/file-exists.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/file-exists.html</id>
+            <category term="npmjs"/>
+
+        <updated>2022-05-08T13:30:32+08:00</updated>
+            <summary>
+                <![CDATA[
+                    "file-exists": "1.0.0" const fileExists = require('file-exists'); fileExists('/index.html', (err, exists) =&gt; console.log(exists)) // OUTPUTS: true or false fileExists('/index.html').then(exists =&gt; { console.log(exists) // OUTPUTS: true or false }) console.log(fileExists.sync('/index.html')) // OUTPUTS: true or false
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    "file-exists": "1.0.0"
+  </p>
+<pre class="line-numbers  language-javascript"><code>const fileExists = require('file-exists');
+ 
+fileExists('/index.html', (err, exists) =&gt; console.log(exists)) // OUTPUTS: true or false
+ 
+fileExists('/index.html').then(exists =&gt; {
+  console.log(exists) // OUTPUTS: true or false
+})
+ 
+console.log(fileExists.sync('/index.html')) // OUTPUTS: true or false
+
+</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>delete-empty递归删除空目录</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/delete-emptydi-gui-shan-chu-kong-mu-lu.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/delete-emptydi-gui-shan-chu-kong-mu-lu.html</id>
+            <category term="npmjs"/>
+
+        <updated>2022-05-08T13:19:49+08:00</updated>
+            <summary>
+                <![CDATA[
+                    "delete-empty": "3.0.0" async-await (promise) const deleteEmpty = require('delete-empty'); (async () =&gt; { let deleted = await deleteEmpty('foo'); console.log(deleted); //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/'] })(); // or deleteEmpty('foo/') .then(deleted =&gt; console.log(deleted)) //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/'] .catch(console.error); async callback Returns the array of deleted directories in&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    "delete-empty": "3.0.0"
+  </p>
+
+  <p>
+    async-await (promise)
+  </p>
+<pre class="line-numbers  language-javascript"><code>const deleteEmpty = require('delete-empty');
+
+(async () =&gt; {
+  let deleted = await deleteEmpty('foo');
+  console.log(deleted); //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/']
+})();
+ 
+// or
+deleteEmpty('foo/')
+  .then(deleted =&gt; console.log(deleted)) //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/']
+  .catch(console.error);
+
+</code></pre>
+
+  <p>
+    async callback
+<br>Returns the array of deleted directories in the callback.
+  </p>
+<pre class="line-numbers  language-javascript"><code>deleteEmpty('foo/', (err, deleted) =&gt; {
+  console.log(deleted); //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/']
+});</code></pre>
+
+  <p>
+    sync
+<br>Returns the array of deleted directories.
+  </p>
+<pre class="line-numbers  language-javascript"><code>console.log(deleteEmpty.sync('foo/'));
+
+</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>count-files文件夹计数和大小</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/count-fileswen-jian-jia-ji-shu-he-da-xiao.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/count-fileswen-jian-jia-ji-shu-he-da-xiao.html</id>
+            <category term="npmjs"/>
+
+        <updated>2022-05-08T13:14:31+08:00</updated>
+            <summary>
+                <![CDATA[
+                    "count-files": "2.6.2" var countFiles = require('count-files') var stats = countFiles(dir, function (err, results) { console.log('done counting') console.log(results) // { files: 10, dirs: 2, bytes: 234 } }) setInterval(function () { console.log('current count', stats) // { files: 4, dirs: 1, bytes: 34 } }, 500)
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    "count-files": "2.6.2"
+  </p>
+<pre class="line-numbers  language-javascript"><code>var countFiles = require('count-files')
+ 
+var stats = countFiles(dir, function (err, results) {
+  console.log('done counting')
+  console.log(results) // { files: 10, dirs: 2, bytes: 234 }
+})
+ 
+setInterval(function () {
+  console.log('current count', stats) // { files: 4, dirs: 1, bytes: 34 }
+}, 500)</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>clean-css优化css</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/clean-css.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/clean-css.html</id>
+            <category term="npmjs"/>
+
+        <updated>2022-05-08T13:14:59+08:00</updated>
+            <summary>
+                <![CDATA[
+                    clean-css is a fast and efficient CSS optimizer for Node.js platform and any modern browser. "clean-css": "5.2.4" var CleanCSS = require('clean-css'); var input = 'a{font-weight:bold;}'; var options = { /* options */ }; var output = new CleanCSS(options).minify(input);
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    clean-css is a fast and efficient CSS optimizer for Node.js platform and any modern browser.
+  </p>
+
+  <p>
+    "clean-css": "5.2.4"
+  </p>
+<pre class="line-numbers  language-javascript"><code>var CleanCSS = require('clean-css');
+var input = 'a{font-weight:bold;}';
+var options = { /* options */ };
+var output = new CleanCSS(options).minify(input);</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>better-sqlite3</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/better-sqlite3.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/better-sqlite3.html</id>
+            <category term="npmjs"/>
+
+        <updated>2022-05-08T12:59:47+08:00</updated>
+            <summary>
+                <![CDATA[
+                    "better-sqlite3": "7.5.0" const db = require('better-sqlite3')('foobar.db', options); const row = db.prepare('SELECT * FROM users WHERE id = ?').get(userId); console.log(row.firstName, row.lastName, row.email); In ES6 module notation: import Database from 'better-sqlite3'; const db = new Database('foobar.db', options)
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    "better-sqlite3": "7.5.0"
+  </p>
+<pre class="line-numbers  language-javascript"><code>const db = require('better-sqlite3')('foobar.db', options);
+
+const row = db.prepare('SELECT * FROM users WHERE id = ?').get(userId);
+console.log(row.firstName, row.lastName, row.email);</code></pre>
+
+  <p>
+    In ES6 module notation:
+  </p>
+<pre class="line-numbers  language-javascript"><code>import Database from 'better-sqlite3';
+const db = new Database('foobar.db', options)</code></pre>
+
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Archiver压缩包处理</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/archiver.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/archiver.html</id>
+            <category term="npmjs"/>
+
+        <updated>2022-05-08T12:52:05+08:00</updated>
+            <summary>
+                <![CDATA[
+                    "archiver": "5.3.0" // require modules const fs = require('fs'); const archiver = require('archiver'); // create a file to stream archive data to. const output = fs.createWriteStream(__dirname + '/example.zip'); const archive = archiver('zip', { zlib: { level: 9 } // Sets the compression level. }); //&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    "archiver": "5.3.0"
+  </p>
+<pre class="line-numbers  language-javascript"><code>// require modules
+const fs = require('fs');
+const archiver = require('archiver');
+
+// create a file to stream archive data to.
+const output = fs.createWriteStream(__dirname + '/example.zip');
+const archive = archiver('zip', {
+  zlib: { level: 9 } // Sets the compression level.
+});
+
+// listen for all archive data to be written
+// 'close' event is fired only when a file descriptor is involved
+output.on('close', function() {
+  console.log(archive.pointer() + ' total bytes');
+  console.log('archiver has been finalized and the output file descriptor has closed.');
+});
+
+// This event is fired when the data source is drained no matter what was the data source.
+// It is not part of this library but rather from the NodeJS Stream API.
+// @see: https://nodejs.org/api/stream.html#stream_event_end
+output.on('end', function() {
+  console.log('Data has been drained');
+});
+
+// good practice to catch warnings (ie stat failures and other non-blocking errors)
+archive.on('warning', function(err) {
+  if (err.code === 'ENOENT') {
+    // log warning
+  } else {
+    // throw error
+    throw err;
+  }
+});
+
+// good practice to catch this error explicitly
+archive.on('error', function(err) {
+  throw err;
+});
+
+// pipe archive data to the file
+archive.pipe(output);
+
+// append a file from stream
+const file1 = __dirname + '/file1.txt';
+archive.append(fs.createReadStream(file1), { name: 'file1.txt' });
+
+// append a file from string
+archive.append('string cheese!', { name: 'file2.txt' });
+
+// append a file from buffer
+const buffer3 = Buffer.from('buff it!');
+archive.append(buffer3, { name: 'file3.txt' });
+
+// append a file
+archive.file('file1.txt', { name: 'file4.txt' });
+
+// append files from a sub-directory and naming it `new-subdir` within the archive
+archive.directory('subdir/', 'new-subdir');
+
+// append files from a sub-directory, putting its contents at the root of archive
+archive.directory('subdir/', false);
+
+// append files from a glob pattern
+archive.glob('file*.txt', {cwd:__dirname});
+
+// finalize the archive (ie we are done appending files but streams have to finish yet)
+// 'close', 'end' or 'finish' may be fired right after calling this method so register to them beforehand
+archive.finalize();</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>pytorch安装</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/pytorchan-zhuang.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/pytorchan-zhuang.html</id>
+            <category term="python"/>
+
+        <updated>2022-05-07T23:23:19+08:00</updated>
+            <summary>
+                <![CDATA[
+                    1、新建pytorch的python环境，避免和其他python环境冲突 conda create -n pytorch 2、打开pytorch官网 https://pytorch.org/get-started/locally/ 3、找到适合自己系统的安装命令 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    1、新建pytorch的python环境，避免和其他python环境冲突
+  </p>
+<pre class="line-numbers  language-batch"><code>conda create -n pytorch</code></pre>
+
+  <p>
+    2、打开pytorch官网
+  </p>
+
+  <p>
+    https://pytorch.org/get-started/locally/
+  </p>
+
+  <p>
+    3、找到适合自己系统的安装命令
+  </p>
+<pre class="line-numbers  language-batch"><code>conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch</code></pre>
+
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>mysql建库用户和导入导出</title>
         <author>
@@ -18,7 +348,7 @@
         <id>https://dongyiliang.github.io/gh-pages/mysqljian-ku-yong-hu-he-dao-ru-dao-chu.html</id>
             <category term="mysql"/>
 
-        <updated>2022-05-07T21:35:34+08:00</updated>
+        <updated>2022-05-07T21:45:53+08:00</updated>
             <summary>
                 <![CDATA[
                     1、用root登录mysql mysql --host localhost -uroot -p 2、执行建库和用户命令 create database ado; CREATE USER 'ado'@'localhost' IDENTIFIED WITH mysql_native_password BY '*******'; grant all on ado.* to 'ado'@'localhost'; 3、建立连接sql.bat mysql --host localhost -uado -p"******" ado 4、使用建表文件初始化数据库，如有 mysql -h localhost -u ado -p"****" ado&lt; D:\data\dzbm\db\backup_20201221.sql 5、建立dbbk.bat用于数据备份，导入还原参考步骤4 set d=%date:~0,10% set d=%d:/=%&hellip;
@@ -186,50 +516,6 @@ datadir =D:\data\mysqldata
 <ul>
 <li>重启eclipse</li>
 </ul>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>maven空白项目生成</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/mavenkong-bai-xiang-mu-sheng-cheng.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/mavenkong-bai-xiang-mu-sheng-cheng.html</id>
-            <category term="maven"/>
-
-        <updated>2022-05-07T17:23:35+08:00</updated>
-            <summary>
-                <![CDATA[
-                    maven空项目生成 mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dzbt -Dversion=1.0.0 -DartifactId=dzbt
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>maven空项目生成</p>
-<p><code>mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dzbt -Dversion=1.0.0 -DartifactId=dzbt</code></p>
-<p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>开篇</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/kai-pian.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/kai-pian.html</id>
-
-        <updated>2022-05-06T23:16:14+08:00</updated>
-            <summary>
-                <![CDATA[
-                    万事开头难
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>万事开头难</p>
-
             ]]>
         </content>
     </entry>

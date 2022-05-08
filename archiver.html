@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Archiver压缩包处理 - ADO工具箱</title><meta name="description" content="'archiver': '5.3.0' // require modules const fs = require('fs'); const archiver = require('archiver'); // create a file to stream archive data to. const output = fs.createWriteStream(__dirname + '/example.zip'); const archive = archiver('zip', { zlib: { level: 9 } // Sets the compression level. }); //&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://dongyiliang.github.io/gh-pages/archiver.html"><link rel="alternate" type="application/atom+xml" href="https://dongyiliang.github.io/gh-pages/feed.xml"><link rel="alternate" type="application/json" href="https://dongyiliang.github.io/gh-pages/feed.json"><meta property="og:title" content="Archiver压缩包处理"><meta property="og:site_name" content="ADO工具箱"><meta property="og:description" content="'archiver': '5.3.0' // require modules const fs = require('fs'); const archiver = require('archiver'); // create a file to stream archive data to. const output = fs.createWriteStream(__dirname + '/example.zip'); const archive = archiver('zip', { zlib: { level: 9 } // Sets the compression level. }); //&hellip;"><meta property="og:url" content="https://dongyiliang.github.io/gh-pages/archiver.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://dongyiliang.github.io/gh-pages/assets/css/style.css?v=628c6e39b91671f80464e742ba6ec11a"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://dongyiliang.github.io/gh-pages/archiver.html"},"headline":"Archiver压缩包处理","datePublished":"2022-05-08T12:51","dateModified":"2022-05-08T12:52","description":"'archiver': '5.3.0' // require modules const fs = require('fs'); const archiver = require('archiver'); // create a file to stream archive data to. const output = fs.createWriteStream(__dirname + '/example.zip'); const archive = archiver('zip', { zlib: { level: 9 } // Sets the compression level. }); //&hellip;","author":{"@type":"Person","name":"yiliang.dong","url":"https://dongyiliang.github.io/gh-pages/authors/yiliangdong/"},"publisher":{"@type":"Organization","name":"yiliang.dong"}}</script></head><body><header class="topbar" id="js-header"><div class="topbar__inner"><a class="logo" href="https://dongyiliang.github.io/gh-pages/">ADO工具箱</a><nav class="navbar"><button class="navbar__toggle" aria-label="菜单" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">菜单</span></span></button><ul class="navbar__menu"><li class="mysql has-submenu"><a href="https://dongyiliang.github.io/gh-pages/tags/" title="mysql" target="_self" aria-haspopup="true">服务器配置</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://dongyiliang.github.io/gh-pages/tags/mysql/" target="_blank">mysql</a></li></ul></li><li class="has-submenu"><span class="is-separator" aria-haspopup="true">开发环境</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://dongyiliang.github.io/gh-pages/tags/maven/" target="_blank">maven</a></li></ul></li><li><a href="https://dongyiliang.github.io/gh-pages/tags/npmjs/" target="_self">npmjs</a></li></ul></nav></div></header><div class="content"><div class="infobar"><div class="infobar__update">最近更新: <time datetime="2022-05-08T13:32">13:32:18 2022年05月08日</time></div><div class="infobar__search"><form action="https://dongyiliang.github.io/gh-pages/search.html"><input type="search" name="q" placeholder="搜索..." aria-label="搜索关键字"> <button type="submit" aria-label="提交"><svg role="presentation" focusable="false" width="15px" height="14px"><use xlink:href="https://dongyiliang.github.io/gh-pages/assets/svg/svg-map.svg#search"/></svg></button></form></div></div><main class="main"><article class="post"><header class="u-header post__header"><h1>Archiver压缩包处理</h1><div class="u-header__meta u-small"><div><a href="https://dongyiliang.github.io/gh-pages/authors/yiliangdong/" title="yiliang.dong">yiliang.dong</a> <time datetime="2022-05-08T12:51">12:51:21 2022年05月08日 </time><a href="https://dongyiliang.github.io/gh-pages/tags/npmjs/" class="u-tag u-tag--1">npmjs</a></div></div></header><div class="post__entry u-inner"><p>"archiver": "5.3.0"</p><pre class="line-numbers language-javascript"><code>// require modules
+const fs = require('fs');
+const archiver = require('archiver');
+
+// create a file to stream archive data to.
+const output = fs.createWriteStream(__dirname + '/example.zip');
+const archive = archiver('zip', {
+  zlib: { level: 9 } // Sets the compression level.
+});
+
+// listen for all archive data to be written
+// 'close' event is fired only when a file descriptor is involved
+output.on('close', function() {
+  console.log(archive.pointer() + ' total bytes');
+  console.log('archiver has been finalized and the output file descriptor has closed.');
+});
+
+// This event is fired when the data source is drained no matter what was the data source.
+// It is not part of this library but rather from the NodeJS Stream API.
+// @see: https://nodejs.org/api/stream.html#stream_event_end
+output.on('end', function() {
+  console.log('Data has been drained');
+});
+
+// good practice to catch warnings (ie stat failures and other non-blocking errors)
+archive.on('warning', function(err) {
+  if (err.code === 'ENOENT') {
+    // log warning
+  } else {
+    // throw error
+    throw err;
+  }
+});
+
+// good practice to catch this error explicitly
+archive.on('error', function(err) {
+  throw err;
+});
+
+// pipe archive data to the file
+archive.pipe(output);
+
+// append a file from stream
+const file1 = __dirname + '/file1.txt';
+archive.append(fs.createReadStream(file1), { name: 'file1.txt' });
+
+// append a file from string
+archive.append('string cheese!', { name: 'file2.txt' });
+
+// append a file from buffer
+const buffer3 = Buffer.from('buff it!');
+archive.append(buffer3, { name: 'file3.txt' });
+
+// append a file
+archive.file('file1.txt', { name: 'file4.txt' });
+
+// append files from a sub-directory and naming it `new-subdir` within the archive
+archive.directory('subdir/', 'new-subdir');
+
+// append files from a sub-directory, putting its contents at the root of archive
+archive.directory('subdir/', false);
+
+// append files from a glob pattern
+archive.glob('file*.txt', {cwd:__dirname});
+
+// finalize the archive (ie we are done appending files but streams have to finish yet)
+// 'close', 'end' or 'finish' may be fired right after calling this method so register to them beforehand
+archive.finalize();</code></pre></div><aside class="post__aside"><div class="post__last-updated u-small">本文更新于 12:52:05 2022年05月08日</div><div class="post__share"></div></aside><footer class="post__footer"><ul class="post__tag box"><li><a href="https://dongyiliang.github.io/gh-pages/tags/npmjs/" class="u-tag u-tag--1" title="npmjs">npmjs</a></li></ul><div class="post__bio box"><div><h4 class="h6"><a href="https://dongyiliang.github.io/gh-pages/authors/yiliangdong/" title="yiliang.dong">yiliang.dong</a></h4></div></div><nav class="post__nav box"><div class="post__nav__prev"><a href="https://dongyiliang.github.io/gh-pages/pytorchan-zhuang.html" class="post__nav__link" rel="prev"><div class="u-small">上一篇<h5>pytorch安装</h5></div></a></div><div class="post__nav__next"><a href="https://dongyiliang.github.io/gh-pages/better-sqlite3.html" class="post__nav__link" rel="next"><div class="u-small">下一篇<h5>better-sqlite3</h5></div></a></div></nav></footer></article><div class="comments-area box"></div></main><div class="sidebar"><section class="box authors"><h3 class="box__title">作者</h3><ul class="authors__cotainer"><li class="authors__item"><div><a href="https://dongyiliang.github.io/gh-pages/authors/yiliangdong/" class="authors__title">yiliang.dong</a> <span class="u-small">文章: 12</span></div></li></ul></section><section class="box"><h3 class="box__title">标签</h3><ul class="tags"><li><a href="https://dongyiliang.github.io/gh-pages/tags/eclipse/">eclipse</a> <span class="u-small">(1)</span></li><li><a href="https://dongyiliang.github.io/gh-pages/tags/maven/">maven</a> <span class="u-small">(1)</span></li><li><a href="https://dongyiliang.github.io/gh-pages/tags/mysql/">mysql</a> <span class="u-small">(2)</span></li><li><a href="https://dongyiliang.github.io/gh-pages/tags/npmjs/">npmjs</a> <span class="u-small">(6)</span></li><li><a href="https://dongyiliang.github.io/gh-pages/tags/python/">python</a> <span class="u-small">(1)</span></li></ul></section></div><footer class="footer"><a class="footer__logo" href="https://dongyiliang.github.io/gh-pages/">ADO工具箱</a><nav><ul class="footer__nav"><li class="footer__nav-item"><a href="https://wodar.iteye.com/" title="wodar" target="_self">wodar</a></li></ul></nav><div class="footer__copyright"><p>工欲善其事，必先利其器！</p></div></footer></div><script>window.publiiThemeMenuConfig = {    
+        mobileMenuMode: 'sidebar',
+        animationSpeed: 300,
+        submenuWidth: 'auto',
+        doubleClickTime: 500,
+        mobileMenuExpandableSubmenus: true, 
+        relatedContainerForOverlayMenuSelector: '.navbar',
+   };</script><script defer="defer" src="https://dongyiliang.github.io/gh-pages/assets/js/scripts.min.js?v=bb66f1d815180573784f8434c8f0bf78"></script><script>var images = document.querySelectorAll('img[loading]');
+
+      for (var i = 0; i < images.length; i++) {
+         if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+         } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+               }, false);
+         }
+      }</script></body></html>

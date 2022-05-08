@@ -10,6 +10,111 @@
     },
     "items": [
         {
+            "id": "https://dongyiliang.github.io/gh-pages/file-exists.html",
+            "url": "https://dongyiliang.github.io/gh-pages/file-exists.html",
+            "title": "file-exists ",
+            "summary": "\"file-exists\": \"1.0.0\" const fileExists = require('file-exists'); fileExists('/index.html', (err, exists) =&gt; console.log(exists)) // OUTPUTS: true or false fileExists('/index.html').then(exists =&gt; { console.log(exists) // OUTPUTS: true or false }) console.log(fileExists.sync('/index.html')) // OUTPUTS: true or false",
+            "content_html": "\n  <p>\n    \"file-exists\": \"1.0.0\"\n  </p>\n<pre class=\"line-numbers  language-javascript\"><code>const fileExists = require('file-exists');\n \nfileExists('/index.html', (err, exists) =&gt; console.log(exists)) // OUTPUTS: true or false\n \nfileExists('/index.html').then(exists =&gt; {\n  console.log(exists) // OUTPUTS: true or false\n})\n \nconsole.log(fileExists.sync('/index.html')) // OUTPUTS: true or false\n\n</code></pre>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "npmjs"
+            ],
+            "date_published": "2022-05-08T13:30:32+08:00",
+            "date_modified": "2022-05-08T13:30:32+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/delete-emptydi-gui-shan-chu-kong-mu-lu.html",
+            "url": "https://dongyiliang.github.io/gh-pages/delete-emptydi-gui-shan-chu-kong-mu-lu.html",
+            "title": "delete-empty递归删除空目录",
+            "summary": "\"delete-empty\": \"3.0.0\" async-await (promise) const deleteEmpty = require('delete-empty'); (async () =&gt; { let deleted = await deleteEmpty('foo'); console.log(deleted); //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/'] })(); // or deleteEmpty('foo/') .then(deleted =&gt; console.log(deleted)) //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/'] .catch(console.error); async callback Returns the array of deleted directories in&hellip;",
+            "content_html": "\n  <p>\n    \"delete-empty\": \"3.0.0\"\n  </p>\n\n  <p>\n    async-await (promise)\n  </p>\n<pre class=\"line-numbers  language-javascript\"><code>const deleteEmpty = require('delete-empty');\n\n(async () =&gt; {\n  let deleted = await deleteEmpty('foo');\n  console.log(deleted); //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/']\n})();\n \n// or\ndeleteEmpty('foo/')\n  .then(deleted =&gt; console.log(deleted)) //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/']\n  .catch(console.error);\n\n</code></pre>\n\n  <p>\n    async callback\n<br>Returns the array of deleted directories in the callback.\n  </p>\n<pre class=\"line-numbers  language-javascript\"><code>deleteEmpty('foo/', (err, deleted) =&gt; {\n  console.log(deleted); //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/']\n});</code></pre>\n\n  <p>\n    sync\n<br>Returns the array of deleted directories.\n  </p>\n<pre class=\"line-numbers  language-javascript\"><code>console.log(deleteEmpty.sync('foo/'));\n\n</code></pre>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "npmjs"
+            ],
+            "date_published": "2022-05-08T13:19:49+08:00",
+            "date_modified": "2022-05-08T13:19:49+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/count-fileswen-jian-jia-ji-shu-he-da-xiao.html",
+            "url": "https://dongyiliang.github.io/gh-pages/count-fileswen-jian-jia-ji-shu-he-da-xiao.html",
+            "title": "count-files文件夹计数和大小",
+            "summary": "\"count-files\": \"2.6.2\" var countFiles = require('count-files') var stats = countFiles(dir, function (err, results) { console.log('done counting') console.log(results) // { files: 10, dirs: 2, bytes: 234 } }) setInterval(function () { console.log('current count', stats) // { files: 4, dirs: 1, bytes: 34 } }, 500)",
+            "content_html": "\n  <p>\n    \"count-files\": \"2.6.2\"\n  </p>\n<pre class=\"line-numbers  language-javascript\"><code>var countFiles = require('count-files')\n \nvar stats = countFiles(dir, function (err, results) {\n  console.log('done counting')\n  console.log(results) // { files: 10, dirs: 2, bytes: 234 }\n})\n \nsetInterval(function () {\n  console.log('current count', stats) // { files: 4, dirs: 1, bytes: 34 }\n}, 500)</code></pre>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "npmjs"
+            ],
+            "date_published": "2022-05-08T13:14:31+08:00",
+            "date_modified": "2022-05-08T13:14:31+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/clean-css.html",
+            "url": "https://dongyiliang.github.io/gh-pages/clean-css.html",
+            "title": "clean-css优化css",
+            "summary": "clean-css is a fast and efficient CSS optimizer for Node.js platform and any modern browser. \"clean-css\": \"5.2.4\" var CleanCSS = require('clean-css'); var input = 'a{font-weight:bold;}'; var options = { /* options */ }; var output = new CleanCSS(options).minify(input);",
+            "content_html": "\n  <p>\n    clean-css is a fast and efficient CSS optimizer for Node.js platform and any modern browser.\n  </p>\n\n  <p>\n    \"clean-css\": \"5.2.4\"\n  </p>\n<pre class=\"line-numbers  language-javascript\"><code>var CleanCSS = require('clean-css');\nvar input = 'a{font-weight:bold;}';\nvar options = { /* options */ };\nvar output = new CleanCSS(options).minify(input);</code></pre>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "npmjs"
+            ],
+            "date_published": "2022-05-08T13:02:25+08:00",
+            "date_modified": "2022-05-08T13:14:59+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/better-sqlite3.html",
+            "url": "https://dongyiliang.github.io/gh-pages/better-sqlite3.html",
+            "title": "better-sqlite3",
+            "summary": "\"better-sqlite3\": \"7.5.0\" const db = require('better-sqlite3')('foobar.db', options); const row = db.prepare('SELECT * FROM users WHERE id = ?').get(userId); console.log(row.firstName, row.lastName, row.email); In ES6 module notation: import Database from 'better-sqlite3'; const db = new Database('foobar.db', options)",
+            "content_html": "\n  <p>\n    \"better-sqlite3\": \"7.5.0\"\n  </p>\n<pre class=\"line-numbers  language-javascript\"><code>const db = require('better-sqlite3')('foobar.db', options);\n\nconst row = db.prepare('SELECT * FROM users WHERE id = ?').get(userId);\nconsole.log(row.firstName, row.lastName, row.email);</code></pre>\n\n  <p>\n    In ES6 module notation:\n  </p>\n<pre class=\"line-numbers  language-javascript\"><code>import Database from 'better-sqlite3';\nconst db = new Database('foobar.db', options)</code></pre>\n\n  <p>\n    \n  </p>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "npmjs"
+            ],
+            "date_published": "2022-05-08T12:59:47+08:00",
+            "date_modified": "2022-05-08T12:59:47+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/archiver.html",
+            "url": "https://dongyiliang.github.io/gh-pages/archiver.html",
+            "title": "Archiver压缩包处理",
+            "summary": "\"archiver\": \"5.3.0\" // require modules const fs = require('fs'); const archiver = require('archiver'); // create a file to stream archive data to. const output = fs.createWriteStream(__dirname + '/example.zip'); const archive = archiver('zip', { zlib: { level: 9 } // Sets the compression level. }); //&hellip;",
+            "content_html": "\n  <p>\n    \"archiver\": \"5.3.0\"\n  </p>\n<pre class=\"line-numbers  language-javascript\"><code>// require modules\nconst fs = require('fs');\nconst archiver = require('archiver');\n\n// create a file to stream archive data to.\nconst output = fs.createWriteStream(__dirname + '/example.zip');\nconst archive = archiver('zip', {\n  zlib: { level: 9 } // Sets the compression level.\n});\n\n// listen for all archive data to be written\n// 'close' event is fired only when a file descriptor is involved\noutput.on('close', function() {\n  console.log(archive.pointer() + ' total bytes');\n  console.log('archiver has been finalized and the output file descriptor has closed.');\n});\n\n// This event is fired when the data source is drained no matter what was the data source.\n// It is not part of this library but rather from the NodeJS Stream API.\n// @see: https://nodejs.org/api/stream.html#stream_event_end\noutput.on('end', function() {\n  console.log('Data has been drained');\n});\n\n// good practice to catch warnings (ie stat failures and other non-blocking errors)\narchive.on('warning', function(err) {\n  if (err.code === 'ENOENT') {\n    // log warning\n  } else {\n    // throw error\n    throw err;\n  }\n});\n\n// good practice to catch this error explicitly\narchive.on('error', function(err) {\n  throw err;\n});\n\n// pipe archive data to the file\narchive.pipe(output);\n\n// append a file from stream\nconst file1 = __dirname + '/file1.txt';\narchive.append(fs.createReadStream(file1), { name: 'file1.txt' });\n\n// append a file from string\narchive.append('string cheese!', { name: 'file2.txt' });\n\n// append a file from buffer\nconst buffer3 = Buffer.from('buff it!');\narchive.append(buffer3, { name: 'file3.txt' });\n\n// append a file\narchive.file('file1.txt', { name: 'file4.txt' });\n\n// append files from a sub-directory and naming it `new-subdir` within the archive\narchive.directory('subdir/', 'new-subdir');\n\n// append files from a sub-directory, putting its contents at the root of archive\narchive.directory('subdir/', false);\n\n// append files from a glob pattern\narchive.glob('file*.txt', {cwd:__dirname});\n\n// finalize the archive (ie we are done appending files but streams have to finish yet)\n// 'close', 'end' or 'finish' may be fired right after calling this method so register to them beforehand\narchive.finalize();</code></pre>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "npmjs"
+            ],
+            "date_published": "2022-05-08T12:51:21+08:00",
+            "date_modified": "2022-05-08T12:52:05+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/pytorchan-zhuang.html",
+            "url": "https://dongyiliang.github.io/gh-pages/pytorchan-zhuang.html",
+            "title": "pytorch安装",
+            "summary": "1、新建pytorch的python环境，避免和其他python环境冲突 conda create -n pytorch 2、打开pytorch官网 https://pytorch.org/get-started/locally/ 3、找到适合自己系统的安装命令 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch",
+            "content_html": "\n  <p>\n    1、新建pytorch的python环境，避免和其他python环境冲突\n  </p>\n<pre class=\"line-numbers  language-batch\"><code>conda create -n pytorch</code></pre>\n\n  <p>\n    2、打开pytorch官网\n  </p>\n\n  <p>\n    https://pytorch.org/get-started/locally/\n  </p>\n\n  <p>\n    3、找到适合自己系统的安装命令\n  </p>\n<pre class=\"line-numbers  language-batch\"><code>conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch</code></pre>\n\n  <p>\n    \n  </p>",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "python"
+            ],
+            "date_published": "2022-05-07T22:57:53+08:00",
+            "date_modified": "2022-05-07T23:23:19+08:00"
+        },
+        {
             "id": "https://dongyiliang.github.io/gh-pages/mysqljian-ku-yong-hu-he-dao-ru-dao-chu.html",
             "url": "https://dongyiliang.github.io/gh-pages/mysqljian-ku-yong-hu-he-dao-ru-dao-chu.html",
             "title": "mysql建库用户和导入导出",
@@ -22,7 +127,7 @@
                    "mysql"
             ],
             "date_published": "2022-05-07T21:33:56+08:00",
-            "date_modified": "2022-05-07T21:35:34+08:00"
+            "date_modified": "2022-05-07T21:45:53+08:00"
         },
         {
             "id": "https://dongyiliang.github.io/gh-pages/adf.html",
@@ -53,35 +158,6 @@
             ],
             "date_published": "2022-05-07T17:10:27+08:00",
             "date_modified": "2022-05-07T21:28:53+08:00"
-        },
-        {
-            "id": "https://dongyiliang.github.io/gh-pages/mavenkong-bai-xiang-mu-sheng-cheng.html",
-            "url": "https://dongyiliang.github.io/gh-pages/mavenkong-bai-xiang-mu-sheng-cheng.html",
-            "title": "maven空白项目生成",
-            "summary": "maven空项目生成 mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dzbt -Dversion=1.0.0 -DartifactId=dzbt",
-            "content_html": "<p>maven空项目生成</p>\n<p><code>mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dzbt -Dversion=1.0.0 -DartifactId=dzbt</code></p>\n<p> </p>",
-            "author": {
-                "name": "yiliang.dong"
-            },
-            "tags": [
-                   "maven"
-            ],
-            "date_published": "2022-05-07T17:07:01+08:00",
-            "date_modified": "2022-05-07T17:23:35+08:00"
-        },
-        {
-            "id": "https://dongyiliang.github.io/gh-pages/kai-pian.html",
-            "url": "https://dongyiliang.github.io/gh-pages/kai-pian.html",
-            "title": "开篇",
-            "summary": "万事开头难",
-            "content_html": "<p>万事开头难</p>\n",
-            "author": {
-                "name": "yiliang.dong"
-            },
-            "tags": [
-            ],
-            "date_published": "2022-05-06T23:16:14+08:00",
-            "date_modified": "2022-05-06T23:16:14+08:00"
         }
     ]
 }
