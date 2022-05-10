@@ -3,12 +3,146 @@
     <title>ADO工具箱</title>
     <link href="https://dongyiliang.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://dongyiliang.github.io/gh-pages" />
-    <updated>2022-05-08T13:30:32+08:00</updated>
+    <updated>2022-05-10T16:18:21+08:00</updated>
     <author>
         <name>yiliang.dong</name>
     </author>
     <id>https://dongyiliang.github.io/gh-pages</id>
 
+    <entry>
+        <title>nodejs环境和国内镜像配置</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/nodejshuan-jing-pei-zhi.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/nodejshuan-jing-pei-zhi.html</id>
+            <category term="nodejs"/>
+
+        <updated>2022-05-10T16:18:21+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。 Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。 https://nodejs.org/en/download/releases/ 例如：node-v16.15.0-win-x64.zip 例如：D:\apps\nodejs，将解压文件放在此处，该目录下可放多个版本，后续修改版本时可切换。安全完整路径为D:\apps\nodejs\node-v16.15.0-win-x64。 在安装根路径下，新建node_global和node_cache目录，在命令行运行下面命令，设置npm全局变量和缓存位置 npm config set prefix "D:\apps\nodejs\node_global" npm config set cache "D:\apps\nodejs\node_cache" 5、设置环境变量 NODE_HOME=D:\apps\nodejs\node-v16.15.0-win-x64 NODE_GLOBAL=D:\apps\nodejs\node_global NODE_PATH=D:\apps\nodejs\node_global\node_modules 在PATH变量后面增加 %NODE_HOME% %NODE_GLOBAL% %NODE_PATH% 6、设置国内镜像，提升下载速度 #查看当前镜像地址 npm get registry #设置淘宝镜像 npm config set registry http://registry.npm.taobao.org/ #通过yarn设置淘宝镜像&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。 Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。
+  </p>
+
+    <h2 id="1">
+      1、下载地址
+    </h2>
+
+  <p>
+    https://nodejs.org/en/download/releases/
+  </p>
+
+    <h2 id="2">
+      2、选择解压缩版本
+    </h2>
+
+  <p>
+    例如：node-v16.15.0-win-x64.zip
+  </p>
+
+    <h2 id="3">
+      3、选择安装根路径
+    </h2>
+
+  <p>
+    例如：D:\apps\nodejs，将解压文件放在此处，该目录下可放多个版本，后续修改版本时可切换。安全完整路径为D:\apps\nodejs\node-v16.15.0-win-x64。
+  </p>
+
+    <h2 id="4npm">
+      4、设置npm全局变量和缓存位置
+    </h2>
+
+  <p>
+    在安装根路径下，新建node_global和node_cache目录，在命令行运行下面命令，设置npm全局变量和缓存位置
+  </p>
+<pre class="line-numbers  language-batch"><code>npm config set prefix "D:\apps\nodejs\node_global"
+npm config set cache "D:\apps\nodejs\node_cache"</code></pre>
+
+    <h2 id="5">
+      5、设置环境变量
+    </h2>
+<pre class="line-numbers  language-batch"><code>NODE_HOME=D:\apps\nodejs\node-v16.15.0-win-x64
+NODE_GLOBAL=D:\apps\nodejs\node_global
+NODE_PATH=D:\apps\nodejs\node_global\node_modules
+在PATH变量后面增加
+%NODE_HOME%
+%NODE_GLOBAL%
+%NODE_PATH%
+</code></pre>
+
+    <h2 id="6">
+      6、设置国内镜像，提升下载速度
+    </h2>
+<pre class="line-numbers  language-batch"><code>#查看当前镜像地址
+npm get registry
+#设置淘宝镜像
+npm config set registry http://registry.npm.taobao.org/
+#通过yarn设置淘宝镜像
+yarn config set registry http://registry.npm.taobao.org/
+#取消淘宝镜像，还原初始镜像
+npm config set registry https://registry.npmjs.org/
+</code></pre>
+
+    <h2 id="7yarn">
+      7、安装yarn测试
+    </h2>
+<pre class="line-numbers  language-batch"><code>npm install -g yarn</code></pre>
+
+    <h2 id="8yarn">
+      8、yarn缓存路径
+    </h2>
+<pre class="line-numbers  language-batch"><code>#查看yarn本地缓存路径
+yarn cache dir
+C:\Users\dongyiliang\AppData\Local\Yarn\Cache\v6
+#修改yarn cache路径
+yarn config set cache-folder "D:\apps\nodejs\yarn_cache"
+
+#yarn缓存文件查看
+yarn cache list --pattern gulp
+yarn cache list --pattern "gulp|grunt"
+yarn cache list --pattern "gulp-(match|newer)"
+
+#设置环境变量
+YARN_CACHE_FOLDER=D:\apps\nodejs\yarn_cache
+</code></pre>
+
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>npm国内镜像</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/npmguo-nei-jing-xiang.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/npmguo-nei-jing-xiang.html</id>
+            <category term="nodejs"/>
+
+        <updated>2022-05-09T16:35:06+08:00</updated>
+            <summary>
+                <![CDATA[
+                    npm 全称 Node Package Manager，是 node.js 的模块依赖管理工具。由于 npm 的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。 国内优秀npm镜像 淘宝npm镜像 搜索地址：http://npm.taobao.org/ registry地址：http://registry.npm.taobao.org/ cnpmjs镜像 搜索地址：http://cnpmjs.org/ registry地址：http://r.cnpmjs.org/ 如何使用 有很多方法来配置 npm 的 registry 地址，下面根据不同情境列出几种比较常用的方法。以淘宝 npm 镜像举例： 临时使用 npm --registry https://registry.npm.taobao.org install express 持久使用 npm config set registry https://registry.npm.taobao.org // 配置后可通过下面方式来验证是否成功 npm config get registry // 或 npm&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    npm 全称 Node Package Manager，是 node.js 的模块依赖管理工具。由于 npm 的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。<br><br>国内优秀npm镜像<br>淘宝npm镜像<br>搜索地址：http://npm.taobao.org/<br>registry地址：http://registry.npm.taobao.org/<br><br>cnpmjs镜像<br>搜索地址：http://cnpmjs.org/<br>registry地址：http://r.cnpmjs.org/<br><br>如何使用<br>有很多方法来配置 npm 的 registry 地址，下面根据不同情境列出几种比较常用的方法。以淘宝 npm 镜像举例：<br><br>临时使用<br>npm --registry https://registry.npm.taobao.org install express<br>持久使用<br>npm config set registry https://registry.npm.taobao.org<br>// 配置后可通过下面方式来验证是否成功<br>npm config get registry<br>// 或<br>npm info express<br><br>通过cnpm使用<br>npm install -g cnpm --registry=https://registry.npm.taobao.org<br>// 使用<br>cnpm install express<br><br>作者：别瞄我<br>链接：https://www.jianshu.com/p/4264dd0ab927<br>来源：简书<br>
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>file-exists </title>
         <author>
@@ -388,134 +522,6 @@ set d=%d: =0%
 echo "%d%"
 
 mysqldump -h localhost -u ado -p"****" ado &gt; D:\data\dzbm\db\backup_%d%.sql</code></pre>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>mysql安装和配置</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/adf.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/adf.html</id>
-            <category term="mysql"/>
-
-        <updated>2022-05-07T21:27:31+08:00</updated>
-            <summary>
-                <![CDATA[
-                    1、下载安装包 https://downloads.mysql.com/archives/community/ 2、解压后，在目录下新建my.ini文件 [client] port=3306 default-character-set=utf8 [mysqld] port=3306 character_set_server=utf8 basedir =D:\apps\mysql-5.7.19-winx64 datadir =D:\data\mysqldata 3、使用管理员权限打开cmd命令，进入Mysql的bin目录，运行安装命令 mysqld –install 4、运行初始化命令 mysqld –initialize –user=root –console 初始化后将在上面的datadir目录生成对应的数据库文件 5、启动mysql net start mysql 6、用root登录mysql mysql -u root -p 7、修改root密码 set password = password('新密码') 8、如果修改密码报错 ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    1、下载安装包
-  </p>
-
-  <p>
-    https://downloads.mysql.com/archives/community/
-  </p>
-
-  <p>
-    2、解压后，在目录下新建my.ini文件
-  </p>
-<pre class="line-numbers  language-ini"><code>[client] 
-port=3306 
-default-character-set=utf8 
-[mysqld] 
-port=3306 
-character_set_server=utf8 
-basedir =D:\apps\mysql-5.7.19-winx64
-datadir =D:\data\mysqldata
-</code></pre>
-
-  <p>
-    3、使用管理员权限打开cmd命令，进入Mysql的bin目录，运行安装命令
-  </p>
-<pre class="line-numbers  language-batch"><code>mysqld –install</code></pre>
-
-  <p>
-    4、运行初始化命令
-  </p>
-<pre class="line-numbers  language-batch"><code>mysqld –initialize –user=root –console
-</code></pre>
-
-  <p>
-    初始化后将在上面的datadir目录生成对应的数据库文件
-  </p>
-
-  <p>
-    5、启动mysql
-  </p>
-<pre class="line-numbers  language-batch"><code>net start mysql</code></pre>
-
-  <p>
-    6、用root登录mysql
-  </p>
-<pre class="line-numbers  language-batch"><code>mysql -u root -p</code></pre>
-
-  <p>
-    7、修改root密码
-  </p>
-<pre class="line-numbers  language-batch"><code>set password = password('新密码')</code></pre>
-
-  <p>
-    8、如果修改密码报错
-  </p>
-<pre class="line-numbers  language-[object Object]"><code>ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’ (using password: YES)
-</code></pre>
-
-  <p>
-    在my.ini加一行
-  </p>
-<pre class="line-numbers  language-null"><code>skip-grant-tables</code></pre>
-
-  <p>
-    这次登录跳过权限,等操作全部完成之后再删掉这一行。
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>eclipse中lombok插件安装配置</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/eclipsezhong-lombokcha-jian-an-zhuang-pei-zhi.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/eclipsezhong-lombokcha-jian-an-zhuang-pei-zhi.html</id>
-            <category term="eclipse"/>
-
-        <updated>2022-05-07T21:28:53+08:00</updated>
-            <summary>
-                <![CDATA[
-                    Lombok是一个java库，可以自动插入到编辑器和构建工具中，提高java的性能。 永远不要再编写另一个getter或equals方法，使用一个注释，你的类就有了一个功能齐全的生成器，自动化了你的日志变量，等等。 https://projectlombok.org/download -javaagent:D:\apps\eclipse\eclipse-jee-2020-09\lombok.jar 重启eclipse
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Lombok是一个java库，可以自动插入到编辑器和构建工具中，提高java的性能。<br><br>永远不要再编写另一个getter或equals方法，使用一个注释，你的类就有了一个功能齐全的生成器，自动化了你的日志变量，等等。</p>
-<ul>
-<li>下载地址</li>
-</ul>
-<p> </p>
-<p><a href="https://projectlombok.org/download">https://projectlombok.org/download</a></p>
-<ul>
-<li>双击下载的lombok.jar安装</li>
-</ul>
-<figure class="post__image"><img loading="lazy"  src="https://dongyiliang.github.io/gh-pages/media/posts/5/LombokInstaller.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-xs.png 300w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-sm.png 480w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-md.png 768w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-lg.png 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-xl.png 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller-2xl.png 1600w"  alt="Lombok安装图" width="833" height="482"></figure>
-<ul>
-<li>选择本地的eclipse安装路径安装</li>
-</ul>
-<figure class="post__image"><img loading="lazy"  src="https://dongyiliang.github.io/gh-pages/media/posts/5/LombokInstaller_step2.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-xs.png 300w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-sm.png 480w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-md.png 768w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-lg.png 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-xl.png 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step2-2xl.png 1600w"  alt="" width="716" height="450"></figure>
-<ul>
-<li>用文本打开eclipse.ini文件，在文件末尾添加：</li>
-</ul>
-<p><code>-javaagent:D:\apps\eclipse\eclipse-jee-2020-09\lombok.jar</code></p>
-<figure class="post__image"><img loading="lazy"  src="https://dongyiliang.github.io/gh-pages/media/posts/5/LombokInstaller_step3.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-xs.png 300w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-sm.png 480w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-md.png 768w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-lg.png 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-xl.png 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/5/responsive/LombokInstaller_step3-2xl.png 1600w"  alt="" width="940" height="447"></figure>
-<ul>
-<li>重启eclipse</li>
-</ul>
             ]]>
         </content>
     </entry>
