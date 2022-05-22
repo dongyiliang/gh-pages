@@ -3,525 +3,554 @@
     <title>ADO工具箱</title>
     <link href="https://dongyiliang.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://dongyiliang.github.io/gh-pages" />
-    <updated>2022-05-10T16:18:21+08:00</updated>
+    <updated>2022-05-14T17:24:05+08:00</updated>
     <author>
         <name>yiliang.dong</name>
     </author>
     <id>https://dongyiliang.github.io/gh-pages</id>
 
     <entry>
-        <title>nodejs环境和国内镜像配置</title>
+        <title>flutter国内加速镜像</title>
         <author>
             <name>yiliang.dong</name>
         </author>
-        <link href="https://dongyiliang.github.io/gh-pages/nodejshuan-jing-pei-zhi.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/nodejshuan-jing-pei-zhi.html</id>
+        <link href="https://dongyiliang.github.io/gh-pages/flutterguo-nei-jia-su-jing-xiang.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/flutterguo-nei-jia-su-jing-xiang.html</id>
+            <category term="flutter"/>
+
+        <updated>2022-05-14T15:49:12+08:00</updated>
+            <summary>
+                <![CDATA[
+                    源码安装 git clone https://github.com/flutter/flutter.git -b stable 下面是国内几个镜像， PUB_HOSTED_URL是Dart依赖包地址 FLUTTER_STORAGE_BASE_URL是Flutter依赖文件地址。 要手动下载最新版本的flutter SDK包，可以访问 FLUTTER_STORAGE_BASE_URL 地址，然后进入/flutter_infra/releases/目录下载（这个方式Flutter社区不可用）。 Flutter 社区 社区主镜像，采用多种方式同步 Flutter 开发者资源（推荐）。 $ export PUB_HOSTED_URL=https://pub.flutter-io.cn $ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn 上海交大 Linux 用户组 使用反向代理方式建立的 Flutter 镜像，数据与站源实时同步。 Pub API 返回值未做处理，可能造成无法访问的情况。 $ export PUB_HOSTED_URL=https://dart-pub.mirrors.sjtug.sjtu.edu.cn $ export FLUTTER_STORAGE_BASE_URL=https://mirrors.sjtug.sjtu.edu.cn $ export PUB_HOSTED_URL=https://mirrors.tuna.tsinghua.edu.cn/dart-pub $ export FLUTTER_STORAGE_BASE_URL=https://mirrors.tuna.tsinghua.edu.cn/flutter&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="源码安装">源码安装</h3>
+<p>git clone <a href="https://github.com/flutter/flutter.git">https://github.com/flutter/flutter.git</a> -b stable</p>
+<h3 id=""></h3>
+<p>下面是国内几个镜像，
+PUB_HOSTED_URL是Dart依赖包地址
+FLUTTER_STORAGE_BASE_URL是Flutter依赖文件地址。</p>
+<p>要手动下载最新版本的flutter SDK包，可以访问 FLUTTER_STORAGE_BASE_URL 地址，然后进入/flutter_infra/releases/目录下载（这个方式Flutter社区不可用）。</p>
+<ul>
+<li><p>Flutter 社区
+社区主镜像，采用多种方式同步 Flutter 开发者资源（推荐）。
+$ export PUB_HOSTED_URL=<a href="https://pub.flutter-io.cn">https://pub.flutter-io.cn</a>
+$ export FLUTTER_STORAGE_BASE_URL=<a href="https://storage.flutter-io.cn">https://storage.flutter-io.cn</a></p>
+</li>
+<li><p>上海交大 Linux 用户组
+使用反向代理方式建立的 Flutter 镜像，数据与站源实时同步。 Pub API 返回值未做处理，可能造成无法访问的情况。</p>
+</li>
+</ul>
+<p>$ export PUB_HOSTED_URL=<a href="https://dart-pub.mirrors.sjtug.sjtu.edu.cn">https://dart-pub.mirrors.sjtug.sjtu.edu.cn</a>
+$ export FLUTTER_STORAGE_BASE_URL=<a href="https://mirrors.sjtug.sjtu.edu.cn">https://mirrors.sjtug.sjtu.edu.cn</a></p>
+<ul>
+<li>清华大学 TUNA 协会
+定时与 Flutter 社区 Storage 镜像同步，Pub API 采取定时主动抓取策略，镜像配置了完善的失败回源策略（推荐）。</li>
+</ul>
+<p>$ export PUB_HOSTED_URL=<a href="https://mirrors.tuna.tsinghua.edu.cn/dart-pub">https://mirrors.tuna.tsinghua.edu.cn/dart-pub</a>
+$ export FLUTTER_STORAGE_BASE_URL=<a href="https://mirrors.tuna.tsinghua.edu.cn/flutter">https://mirrors.tuna.tsinghua.edu.cn/flutter</a></p>
+<ul>
+<li>CNNIC
+基于 TUNA 协会的镜像服务，数据策略与 TUNA 一致，通过非教育网的域名访问。</li>
+</ul>
+<p>$ export PUB_HOSTED_URL=<a href="http://mirrors.cnnic.cn/dart-pub">http://mirrors.cnnic.cn/dart-pub</a>
+$ export FLUTTER_STORAGE_BASE_URL=<a href="http://mirrors.cnnic.cn/flutter">http://mirrors.cnnic.cn/flutter</a></p>
+<ul>
+<li>腾讯云开源镜像站
+定时（每天凌晨）与 TUNA 协会镜像同步，数据有延迟，访问速度有待反馈。</li>
+</ul>
+<p>$ export PUB_HOSTED_URL=<a href="https://mirrors.cloud.tencent.com/dart-pub">https://mirrors.cloud.tencent.com/dart-pub</a>
+$ export FLUTTER_STORAGE_BASE_URL=<a href="https://mirrors.cloud.tencent.com/flutter">https://mirrors.cloud.tencent.com/flutter</a></p>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>github加速</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/githubjia-su.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/githubjia-su.html</id>
+            <category term="环境配置"/>
+            <category term="github"/>
+
+        <updated>2022-05-14T11:42:45+08:00</updated>
+            <summary>
+                <![CDATA[
+                    加速地址 fastgit.org：https://doc.fastgit.org/ http://cnpmjs.org：https://github.com.cnpmjs.org/ http://gitclone.com：https://gitclone.com/ gitee：https://gitee.com/mirrors GitHub 文件加速：https://gh.api.99988866.xyz/ Github 仓库加速：https://github.zhlh6.cn/ Github 仓库加速：http://toolwa.com/github/ 加速 clone # 方法一：手动替换地址 #原地址 $ git clone https://github.com/kubernetes/kubernetes.git #改为 $ git clone https://github.com.cnpmjs.org/kubernetes/kubernetes.git #或者 $ git clone https://hub.fastgit.org/kubernetes/kubernetes.git #或者 $ git clone https://gitclone.com/github.com/kubernetes/kubernetes.git # 方法二：配置git自动替换 $ git config --global url.&quot;https://hub.fastgit.org&quot;.insteadOf https://github.com # 测试&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="加速地址">加速地址</h3>
+<ol>
+<li>fastgit.org：<a href="https://doc.fastgit.org/">https://doc.fastgit.org/</a></li>
+<li><a href="http://cnpmjs.org%EF%BC%9Ahttps://github.com.cnpmjs.org/">http://cnpmjs.org：https://github.com.cnpmjs.org/</a></li>
+<li><a href="http://gitclone.com%EF%BC%9Ahttps://gitclone.com/">http://gitclone.com：https://gitclone.com/</a></li>
+<li>gitee：<a href="https://gitee.com/mirrors">https://gitee.com/mirrors</a></li>
+<li>GitHub 文件加速：<a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz/</a></li>
+<li>Github 仓库加速：<a href="https://github.zhlh6.cn/">https://github.zhlh6.cn/</a></li>
+<li>Github 仓库加速：<a href="http://toolwa.com/github/">http://toolwa.com/github/</a></li>
+</ol>
+<h3 id="加速-clone">加速 clone</h3>
+<pre><code># 方法一：手动替换地址 
+#原地址 
+$ git clone https://github.com/kubernetes/kubernetes.git 
+#改为 
+$ git clone https://github.com.cnpmjs.org/kubernetes/kubernetes.git 
+#或者 
+$ git clone https://hub.fastgit.org/kubernetes/kubernetes.git 
+#或者 
+$ git clone https://gitclone.com/github.com/kubernetes/kubernetes.git 
+ 
+# 方法二：配置git自动替换 
+$ git config --global url.&quot;https://hub.fastgit.org&quot;.insteadOf https://github.com 
+# 测试 
+$ git clone https://github.com/kubernetes/kubernetes.git 
+# 查看git配置信息 
+$ git config --global --list 
+# 取消设置 
+$ git config --global --unset url.https://github.com/.insteadof 
+</code></pre>
+<h3 id="加速release">加速release</h3>
+<pre><code># 原地址 
+wget https://github.com/goharbor/harbor/releases/download/v2.0.2/harbor-offline-installer-v2.0.2.tgz 
+# 加速下载方法一 
+wget https://download.fastgit.org/goharbor/harbor/releases/download/v2.0.2/harbor-offline-installer-v2.0.2.tgz 
+# 加速下载方法二 
+wget https://hub.fastgit.org/goharbor/harbor/releases/download/v2.0.2/harbor-offline-installer-v2.0.2.tgz 
+
+//测试1
+https://hub.fastgit.org/ipfs-desktop/releases/download/v0.20.6/IPFS-Desktop-Setup-0.20.6.exe
+
+https://github.com/ipfs-shipyard/ipfs-desktop/releases/download/v0.20.6/IPFS-Desktop-Setup-0.20.6.exe
+
+</code></pre>
+<h3 id="加速-raw">加速 raw</h3>
+<pre><code># 原地址 
+$ wget https://raw.githubusercontent.com/kubernetes/kubernetes/master/README.md 
+# 加速下载方法一 
+$ wget https://raw.staticdn.net/kubernetes/kubernetes/master/README.md 
+# 加速下载方法二 
+$ wget https://raw.fastgit.org/kubernetes/kubernetes/master/README.md
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>cygwin安装配置</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/cygwinan-zhuang-pei-zhi.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/cygwinan-zhuang-pei-zhi.html</id>
+            <category term="环境配置"/>
+            <category term="windows"/>
+
+        <updated>2022-05-14T10:22:16+08:00</updated>
+            <summary>
+                <![CDATA[
+                    为了方便使用windows下的编辑器写代码并使用make命令，所以在windows上也安装make，windows下使用gcc和g++需要安装MinGW32。 https://www.mingw-w64.org/downloads/ http://cygwin.com/install.html
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>为了方便使用windows下的编辑器写代码并使用make命令，所以在windows上也安装make，windows下使用gcc和g++需要安装MinGW32。</p>
+<h3 id="下载地址">下载地址</h3>
+<p><a href="https://www.mingw-w64.org/downloads/">https://www.mingw-w64.org/downloads/</a>
+<a href="http://cygwin.com/install.html">http://cygwin.com/install.html</a></p>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>cmder快捷键</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/cmderkuai-jie-jian.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/cmderkuai-jie-jian.html</id>
+            <category term="快捷键"/>
+            <category term="windows"/>
+
+        <updated>2022-05-12T20:07:10+08:00</updated>
+            <summary>
+                <![CDATA[
+                    快捷键 Tab #命令补全 Ctrl+T #建立新页 Ctrl+W #关闭标签页 Ctrl+Tab #切换标签页 Alt+F4 #关闭所有标签页 Ctrl+n #切换到第n个页签 Alt + Enter #切换到全屏状态
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="快捷键">快捷键</h3>
+<pre><code>Tab #命令补全
+Ctrl+T #建立新页
+Ctrl+W #关闭标签页
+Ctrl+Tab #切换标签页
+Alt+F4 #关闭所有标签页
+Ctrl+n #切换到第n个页签
+Alt + Enter #切换到全屏状态
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>爬网站工具templatespider</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/pa-wang-zhan-gong-ju.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/pa-wang-zhan-gong-ju.html</id>
+            <category term="建站工具"/>
+
+        <updated>2022-05-12T18:01:20+08:00</updated>
+            <summary>
+                <![CDATA[
+                    简介 看好哪个网站，指定好URL，自动扒下来做成 html模版。并且所下载的css、js、图片、html文件会自动分好类保存到特定文件夹！ 然后使用 模版计算工具，自动将 html模版计算合成为 网市场云建站系统 可用的模版。 http://www.templatespider.zvo.cn/#rjxz https://gitee.com/mail_osc/templatespider
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="简介">简介</h3>
+<p>看好哪个网站，指定好URL，自动扒下来做成 html模版。并且所下载的css、js、图片、html文件会自动分好类保存到特定文件夹！ 然后使用 模版计算工具，自动将 html模版计算合成为 网市场云建站系统 可用的模版。</p>
+<h3 id="下载地址">下载地址</h3>
+<p><a href="http://www.templatespider.zvo.cn/#rjxz">http://www.templatespider.zvo.cn/#rjxz</a></p>
+<h3 id="源码地址">源码地址</h3>
+<p><a href="https://gitee.com/mail_osc/templatespider">https://gitee.com/mail_osc/templatespider</a></p>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>webview2安装</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/webview2an-zhuang.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/webview2an-zhuang.html</id>
+            <category term="windows"/>
+
+        <updated>2022-05-12T17:11:19+08:00</updated>
+            <summary>
+                <![CDATA[
+                    下载地址 https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/ https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="下载地址">下载地址</h3>
+<p><a href="https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/">https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/</a></p>
+<p><a href="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe">https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe</a></p>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>tauri项目案例</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/taurixiang-mu-an-li.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/taurixiang-mu-an-li.html</id>
+            <category term="tauri"/>
+
+        <updated>2022-05-14T17:24:05+08:00</updated>
+            <summary>
+                <![CDATA[
+                    yarn初识生成项目 //检查rustup安装 rustup show //建空项目 cd D:\taurispace\ //使用模板创建项目 npx create-tauri-app cd tauri-app npm run tauri info //预览项目 npm run tauri dev //生成项目 npm run tauri build
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="yarn初识生成项目">yarn初识生成项目</h3>
+<pre><code>//检查rustup安装
+rustup show
+
+//建空项目
+cd D:\taurispace\
+
+//使用模板创建项目
+npx create-tauri-app
+
+cd tauri-app
+npm run tauri info
+
+//预览项目
+npm run tauri dev
+
+//生成项目
+npm run tauri build
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>yarn常用命令</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/yarnchang-yong-ming-ling.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/yarnchang-yong-ming-ling.html</id>
+            <category term="常用命令"/>
             <category term="nodejs"/>
 
-        <updated>2022-05-10T16:18:21+08:00</updated>
+        <updated>2022-05-12T16:53:08+08:00</updated>
             <summary>
                 <![CDATA[
-                    Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。 Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。 https://nodejs.org/en/download/releases/ 例如：node-v16.15.0-win-x64.zip 例如：D:\apps\nodejs，将解压文件放在此处，该目录下可放多个版本，后续修改版本时可切换。安全完整路径为D:\apps\nodejs\node-v16.15.0-win-x64。 在安装根路径下，新建node_global和node_cache目录，在命令行运行下面命令，设置npm全局变量和缓存位置 npm config set prefix "D:\apps\nodejs\node_global" npm config set cache "D:\apps\nodejs\node_cache" 5、设置环境变量 NODE_HOME=D:\apps\nodejs\node-v16.15.0-win-x64 NODE_GLOBAL=D:\apps\nodejs\node_global NODE_PATH=D:\apps\nodejs\node_global\node_modules 在PATH变量后面增加 %NODE_HOME% %NODE_GLOBAL% %NODE_PATH% 6、设置国内镜像，提升下载速度 #查看当前镜像地址 npm get registry #设置淘宝镜像 npm config set registry http://registry.npm.taobao.org/ #通过yarn设置淘宝镜像&hellip;
+                    yarn安装 npm i yarn -g Yarn -v yarn init 与 npm init 一样通过交互式会话创建一个 package.json yarn init # yarn npm init # npm yarn init –yes # 简写 -y npm init -y 通过 yarn add 添加依赖会更新 package.json 以及 yarn.lock 文件 1).开发环境 yarn add 依赖会记录在 package.json 的&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                
-  <p>
-    Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。 Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。
-  </p>
+                <ol>
+<li>yarn安装</li>
+</ol>
+<p>npm i yarn -g</p>
+<ol start="2">
+<li>查看版本</li>
+</ol>
+<p>Yarn -v</p>
+<ol start="3">
+<li>开始一个新工程</li>
+</ol>
+<p>yarn init 与 npm init 一样通过交互式会话创建一个 package.json</p>
+<p>yarn init # yarn</p>
+<p>npm init # npm</p>
+<ol start="4">
+<li><h1 id="跳过会话，直接通过默认值生成-packagejson">跳过会话，直接通过默认值生成 package.json</h1>
+</li>
+</ol>
+<p>yarn init –yes # 简写 -y</p>
+<p>npm init -y</p>
+<ol start="5">
+<li>添加一个依赖</li>
+</ol>
+<p>通过 yarn add 添加依赖会更新 package.json 以及 yarn.lock 文件</p>
+<p>1).开发环境</p>
+<p>yarn add <packageName> 依赖会记录在 package.json 的 dependencies 下 开发环境</p>
+<p>yarn add <a href="mailto:&#119;&#101;&#98;&#112;&#x61;&#x63;&#x6b;&#x40;&#x32;&#x2e;&#51;&#x2e;&#51;">&#119;&#101;&#98;&#112;&#x61;&#x63;&#x6b;&#x40;&#x32;&#x2e;&#51;&#x2e;&#51;</a> # yarn –save 是 yarn 默认的，默认记录在 package.json 中</p>
+<p>npm install <a href="mailto:&#x77;&#x65;&#98;&#x70;&#x61;&#x63;&#107;&#64;&#x32;&#x2e;&#x33;&#46;&#51;">&#x77;&#x65;&#98;&#x70;&#x61;&#x63;&#107;&#64;&#x32;&#x2e;&#x33;&#46;&#51;</a> –save # npm</p>
+<p>2).生产环境</p>
+<p>yarn add <packageName> –dev 依赖会记录在 package.json 的 devDependencies 下 生产环境</p>
+<p>yarn add webpack –dev # yarn 简写 -D</p>
+<p>npm install webpack –save-dev # npm</p>
+<p>3).全局</p>
+<p>yarn global add <packageName> 全局安装依赖</p>
+<p>yarn global add webpack # yarn</p>
+<p>npm install webpack -g # npm</p>
+<ol start="6">
+<li>更新一个依赖</li>
+</ol>
+<p>yarn upgrade 用于更新包到基于规范范围的最新版本</p>
+<p>yarn upgrade # 升级所有依赖项，不记录在 package.json 中</p>
+<p>npm update # npm 可以通过 ‘–save|–save-dev’ 指定升级哪类依赖</p>
+<p>yarn upgrade webpack # 升级指定包</p>
+<p>npm update webpack –save-dev # npm</p>
+<p>yarn upgrade –latest # 忽略版本规则，升级到最新版本，并且更新 package.json</p>
+<ol start="7">
+<li>移除一个依赖</li>
+</ol>
+<p>yarn remove <packageName></p>
+<p>yarn remove webpack # yarn</p>
+<p>npm uninstall webpack –save # npm 可以指定 –save | –save-dev</p>
+<ol start="8">
+<li>安装 package.json 中的所有文件</li>
+</ol>
+<p>yarn 或者 yarn install</p>
+<p>yarn install # 或者 yarn 在 node_modules 目录安装 package.json 中列出的所有依赖</p>
+<p>npm install # npm</p>
+<p>yarn install 安装时，如果 node_modules 中有相应的包则不会重新下载 –force 可以强制重新下载安装</p>
+<p>yarn install –force # 强制下载安装</p>
+<p>npm install –force # npm</p>
+<ol start="9">
+<li>运行脚本</li>
+</ol>
+<p>yarn run 用来执行在 package.json 中 scripts 属性下定义的脚本</p>
+<p>// package.json</p>
+<p>{</p>
+<p>“scripts”: {</p>
+<p>“dev”: “node app.js”,</p>
+<p>“start”: “node app.js”</p>
+<p>}</p>
+<p>}</p>
+<p>yarn run dev # yarn 执行 dev 对应的脚本 node app.js</p>
+<p>npm run # npm</p>
+<p>yarn start # yarn</p>
+<p>npm start # npm</p>
+<p>与 npm 一样 可以有 yarn start 和 yarn test 两个简写的运行脚本方式</p>
+<ol start="10">
+<li>显示某个包信息</li>
+</ol>
+<p>yarn info <packageName> 可以用来查看某个模块的最新版本信息</p>
+<p>yarn info webpack # yarn</p>
+<p>npm info webpack # npm</p>
+<p>yarn info webpack –json # 输出 json 格式</p>
+<p>npm info webpack –json # npm</p>
+<p>yarn info webpack readme # 输出 README 部分</p>
+<p>npm info webpack readme</p>
+<ol start="11">
+<li>列出项目的所有依赖</li>
+</ol>
+<p>yarn list</p>
+<p>yarn list # 列出当前项目的依赖</p>
+<p>npm list # npm</p>
+<p>yarn list –depth=0 # 限制依赖的深度</p>
+<p>sudo yarn global list # 列出全局安装的模块</p>
+<ol start="12">
+<li>管理 yarn 配置文件</li>
+</ol>
+<p>yarn coinfig</p>
+<p>yarn config set key value # 设置</p>
+<p>npm config set key value</p>
+<p>yarn config get key # 读取值</p>
+<p>npm config get key</p>
+<p>yarn config delete key # 删除</p>
+<p>npm config delete key</p>
+<p>yarn config list # 显示当前配置</p>
+<p>npm config list</p>
+<p>yarn config set registry <a href="https://registry.npm.taobao.org">https://registry.npm.taobao.org</a> # 设置淘宝镜像</p>
+<p>npm config set registry <a href="https://registry.npm.taobao.org">https://registry.npm.taobao.org</a> # npm</p>
+<ol start="13">
+<li>缓存</li>
+</ol>
+<p>yarn cache</p>
+<p>sudo yarn cache list # 列出已缓存的每个包</p>
+<p>sudo yarn cache dir # 返回 全局缓存位置</p>
+<p>sudo yarn cache clean # 清除缓存</p>
 
-    <h2 id="1">
-      1、下载地址
-    </h2>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>cmder安装配置</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/cmderan-zhuang-pei-zhi.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/cmderan-zhuang-pei-zhi.html</id>
+            <category term="环境配置"/>
+            <category term="windows"/>
 
-  <p>
-    https://nodejs.org/en/download/releases/
-  </p>
+        <updated>2022-05-12T16:32:16+08:00</updated>
+            <summary>
+                <![CDATA[
+                    下载地址 https://cmder.net/ Tab manipulation Ctrl + ` : Global Summon from taskbar Win + Alt + p : Preferences (Or right click on title bar) Ctrl + t : New tab dialog (maybe you want to open cmd as admin?) Ctrl + w : Close&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="下载地址">下载地址</h3>
+<p><a href="https://cmder.net/">https://cmder.net/</a></p>
+<h3 id="安装">安装</h3>
+<ul>
+<li>Unzip</li>
+<li>(optional) Place your own executable files into the bin folder to be injected into your PATH.</li>
+<li>Run Cmder (Cmder.exe)</li>
+</ul>
+<h3 id="快捷键">快捷键</h3>
+<pre><code>Tab manipulation
+Ctrl + ` : Global Summon from taskbar
+Win + Alt + p : Preferences (Or right click on title bar)
+Ctrl + t : New tab dialog (maybe you want to open cmd as admin?)
+Ctrl + w : Close tab
+Shift + Alt + number : Fast new tab:
+1. CMD
+2. PowerShell
+Alt + Enter : Fullscreen
 
-    <h2 id="2">
-      2、选择解压缩版本
-    </h2>
-
-  <p>
-    例如：node-v16.15.0-win-x64.zip
-  </p>
-
-    <h2 id="3">
-      3、选择安装根路径
-    </h2>
-
-  <p>
-    例如：D:\apps\nodejs，将解压文件放在此处，该目录下可放多个版本，后续修改版本时可切换。安全完整路径为D:\apps\nodejs\node-v16.15.0-win-x64。
-  </p>
-
-    <h2 id="4npm">
-      4、设置npm全局变量和缓存位置
-    </h2>
-
-  <p>
-    在安装根路径下，新建node_global和node_cache目录，在命令行运行下面命令，设置npm全局变量和缓存位置
-  </p>
-<pre class="line-numbers  language-batch"><code>npm config set prefix "D:\apps\nodejs\node_global"
-npm config set cache "D:\apps\nodejs\node_cache"</code></pre>
-
-    <h2 id="5">
-      5、设置环境变量
-    </h2>
-<pre class="line-numbers  language-batch"><code>NODE_HOME=D:\apps\nodejs\node-v16.15.0-win-x64
-NODE_GLOBAL=D:\apps\nodejs\node_global
-NODE_PATH=D:\apps\nodejs\node_global\node_modules
-在PATH变量后面增加
-%NODE_HOME%
-%NODE_GLOBAL%
-%NODE_PATH%
+Shell
+Ctrl + Alt + u : Traverse up in directory structure (lovely feature!)
+End, Home, Ctrl : Traverse text as usual on Windows
+Ctrl + r : History search
+Shift + mouse : Select and copy text from buffer
+Right click / Ctrl + Shift + v : Paste text
 </code></pre>
 
-    <h2 id="6">
-      6、设置国内镜像，提升下载速度
-    </h2>
-<pre class="line-numbers  language-batch"><code>#查看当前镜像地址
-npm get registry
-#设置淘宝镜像
-npm config set registry http://registry.npm.taobao.org/
-#通过yarn设置淘宝镜像
-yarn config set registry http://registry.npm.taobao.org/
-#取消淘宝镜像，还原初始镜像
-npm config set registry https://registry.npmjs.org/
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>choco常用命令</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/chocolateychang-yong-ming-ling.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/chocolateychang-yong-ming-ling.html</id>
+            <category term="常用命令"/>
+            <category term="windows"/>
+
+        <updated>2022-05-12T19:48:09+08:00</updated>
+            <summary>
+                <![CDATA[
+                    常用命令 * search - 搜索包 choco search something * list - 列出包 choco list -lo * install - 安装 choco install baretail * pin - 固定包的版本，防止包被升级 choco pin windirstat * upgrade - 安装包的升级 choco upgrade baretail * uninstall - 安装包的卸载 choco uninstall baretail * 安装Ruby&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="常用命令">常用命令</h3>
+<pre><code>* search  - 搜索包 choco search something
+* list  - 列出包 choco list -lo
+* install  - 安装 choco install baretail
+* pin  - 固定包的版本，防止包被升级 choco pin windirstat
+* upgrade  - 安装包的升级 choco upgrade baretail
+* uninstall  - 安装包的卸载 choco uninstall baretail
+* 安装Ruby Gem  - choco install compass -source ruby
+* 安装Python Egg  - choco install sphynx -source python
+* 安装IIS服务器特性  - choco install IIS -source windowsfeatures
+* 安装Webpi特性  - choco install IIS7.5Express -source webpi
+
+// 安装包
+choco install &lt;package&gt;
+// 如果使用 -version 可以指定版本
+
+// 查看安装的包
+choco list -l
+choco list -local-only
+
+// 包的更新，包括chocolatey本身
+choco upgrade &lt;packagename&gt;
+
+// 包的卸载
+choco uninstall
+
+// 包的搜索（我更喜欢去官网的Packages页上搜）
+choco search
+
+//查看默认源
+choco source list
+
+//添加国内源（垃圾玩意，连不上了）
+choco source add -n=seuic -s&quot;http://choco.seuic.info/nuget/&quot; 
+choco source remove -n=chocolatey
+choco source add -n=chocolatey -s&quot;https://chocolatey.org/api/v2/&quot;  --priority=3
+
+//查看新源的东西
+choco list -s&quot;seuic&quot;
+
+//这个所谓国内源连不上的，赶紧删除
+choco source remove -n=seuic
+
+//choco source命令
+choco source
+choco source list
+choco source add -n=bob -s=&quot;https://somewhere/out/there/api/v2/&quot;
+choco source add -n=bob -s &quot;&#39;https://somewhere/out/there/api/v2/&#39;&quot; -cert=\Users\bob\bob.pfx
+choco source add -n=bob -s &quot;&#39;https://somewhere/out/there/api/v2/&#39;&quot; -u=bob -p=12345
+choco source disable -n=bob
+choco source enable -n=bob
+choco source remove -n=bob
+
+
+
+//安装cmder代替cmd
+cinst cmder -y -s&quot;seuic&quot;
 </code></pre>
 
-    <h2 id="7yarn">
-      7、安装yarn测试
-    </h2>
-<pre class="line-numbers  language-batch"><code>npm install -g yarn</code></pre>
-
-    <h2 id="8yarn">
-      8、yarn缓存路径
-    </h2>
-<pre class="line-numbers  language-batch"><code>#查看yarn本地缓存路径
-yarn cache dir
-C:\Users\dongyiliang\AppData\Local\Yarn\Cache\v6
-#修改yarn cache路径
-yarn config set cache-folder "D:\apps\nodejs\yarn_cache"
-
-#yarn缓存文件查看
-yarn cache list --pattern gulp
-yarn cache list --pattern "gulp|grunt"
-yarn cache list --pattern "gulp-(match|newer)"
-
-#设置环境变量
-YARN_CACHE_FOLDER=D:\apps\nodejs\yarn_cache
-</code></pre>
-
-  <p>
-    
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>npm国内镜像</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/npmguo-nei-jing-xiang.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/npmguo-nei-jing-xiang.html</id>
-            <category term="nodejs"/>
-
-        <updated>2022-05-09T16:35:06+08:00</updated>
-            <summary>
-                <![CDATA[
-                    npm 全称 Node Package Manager，是 node.js 的模块依赖管理工具。由于 npm 的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。 国内优秀npm镜像 淘宝npm镜像 搜索地址：http://npm.taobao.org/ registry地址：http://registry.npm.taobao.org/ cnpmjs镜像 搜索地址：http://cnpmjs.org/ registry地址：http://r.cnpmjs.org/ 如何使用 有很多方法来配置 npm 的 registry 地址，下面根据不同情境列出几种比较常用的方法。以淘宝 npm 镜像举例： 临时使用 npm --registry https://registry.npm.taobao.org install express 持久使用 npm config set registry https://registry.npm.taobao.org // 配置后可通过下面方式来验证是否成功 npm config get registry // 或 npm&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    npm 全称 Node Package Manager，是 node.js 的模块依赖管理工具。由于 npm 的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。<br><br>国内优秀npm镜像<br>淘宝npm镜像<br>搜索地址：http://npm.taobao.org/<br>registry地址：http://registry.npm.taobao.org/<br><br>cnpmjs镜像<br>搜索地址：http://cnpmjs.org/<br>registry地址：http://r.cnpmjs.org/<br><br>如何使用<br>有很多方法来配置 npm 的 registry 地址，下面根据不同情境列出几种比较常用的方法。以淘宝 npm 镜像举例：<br><br>临时使用<br>npm --registry https://registry.npm.taobao.org install express<br>持久使用<br>npm config set registry https://registry.npm.taobao.org<br>// 配置后可通过下面方式来验证是否成功<br>npm config get registry<br>// 或<br>npm info express<br><br>通过cnpm使用<br>npm install -g cnpm --registry=https://registry.npm.taobao.org<br>// 使用<br>cnpm install express<br><br>作者：别瞄我<br>链接：https://www.jianshu.com/p/4264dd0ab927<br>来源：简书<br>
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>file-exists </title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/file-exists.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/file-exists.html</id>
-            <category term="npmjs"/>
-
-        <updated>2022-05-08T13:30:32+08:00</updated>
-            <summary>
-                <![CDATA[
-                    "file-exists": "1.0.0" const fileExists = require('file-exists'); fileExists('/index.html', (err, exists) =&gt; console.log(exists)) // OUTPUTS: true or false fileExists('/index.html').then(exists =&gt; { console.log(exists) // OUTPUTS: true or false }) console.log(fileExists.sync('/index.html')) // OUTPUTS: true or false
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    "file-exists": "1.0.0"
-  </p>
-<pre class="line-numbers  language-javascript"><code>const fileExists = require('file-exists');
- 
-fileExists('/index.html', (err, exists) =&gt; console.log(exists)) // OUTPUTS: true or false
- 
-fileExists('/index.html').then(exists =&gt; {
-  console.log(exists) // OUTPUTS: true or false
-})
- 
-console.log(fileExists.sync('/index.html')) // OUTPUTS: true or false
-
-</code></pre>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>delete-empty递归删除空目录</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/delete-emptydi-gui-shan-chu-kong-mu-lu.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/delete-emptydi-gui-shan-chu-kong-mu-lu.html</id>
-            <category term="npmjs"/>
-
-        <updated>2022-05-08T13:19:49+08:00</updated>
-            <summary>
-                <![CDATA[
-                    "delete-empty": "3.0.0" async-await (promise) const deleteEmpty = require('delete-empty'); (async () =&gt; { let deleted = await deleteEmpty('foo'); console.log(deleted); //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/'] })(); // or deleteEmpty('foo/') .then(deleted =&gt; console.log(deleted)) //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/'] .catch(console.error); async callback Returns the array of deleted directories in&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    "delete-empty": "3.0.0"
-  </p>
-
-  <p>
-    async-await (promise)
-  </p>
-<pre class="line-numbers  language-javascript"><code>const deleteEmpty = require('delete-empty');
-
-(async () =&gt; {
-  let deleted = await deleteEmpty('foo');
-  console.log(deleted); //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/']
-})();
- 
-// or
-deleteEmpty('foo/')
-  .then(deleted =&gt; console.log(deleted)) //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/']
-  .catch(console.error);
-
-</code></pre>
-
-  <p>
-    async callback
-<br>Returns the array of deleted directories in the callback.
-  </p>
-<pre class="line-numbers  language-javascript"><code>deleteEmpty('foo/', (err, deleted) =&gt; {
-  console.log(deleted); //=&gt; ['foo/aa/', 'foo/a/cc/', 'foo/b/', 'foo/c/']
-});</code></pre>
-
-  <p>
-    sync
-<br>Returns the array of deleted directories.
-  </p>
-<pre class="line-numbers  language-javascript"><code>console.log(deleteEmpty.sync('foo/'));
-
-</code></pre>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>count-files文件夹计数和大小</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/count-fileswen-jian-jia-ji-shu-he-da-xiao.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/count-fileswen-jian-jia-ji-shu-he-da-xiao.html</id>
-            <category term="npmjs"/>
-
-        <updated>2022-05-08T13:14:31+08:00</updated>
-            <summary>
-                <![CDATA[
-                    "count-files": "2.6.2" var countFiles = require('count-files') var stats = countFiles(dir, function (err, results) { console.log('done counting') console.log(results) // { files: 10, dirs: 2, bytes: 234 } }) setInterval(function () { console.log('current count', stats) // { files: 4, dirs: 1, bytes: 34 } }, 500)
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    "count-files": "2.6.2"
-  </p>
-<pre class="line-numbers  language-javascript"><code>var countFiles = require('count-files')
- 
-var stats = countFiles(dir, function (err, results) {
-  console.log('done counting')
-  console.log(results) // { files: 10, dirs: 2, bytes: 234 }
-})
- 
-setInterval(function () {
-  console.log('current count', stats) // { files: 4, dirs: 1, bytes: 34 }
-}, 500)</code></pre>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>clean-css优化css</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/clean-css.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/clean-css.html</id>
-            <category term="npmjs"/>
-
-        <updated>2022-05-08T13:14:59+08:00</updated>
-            <summary>
-                <![CDATA[
-                    clean-css is a fast and efficient CSS optimizer for Node.js platform and any modern browser. "clean-css": "5.2.4" var CleanCSS = require('clean-css'); var input = 'a{font-weight:bold;}'; var options = { /* options */ }; var output = new CleanCSS(options).minify(input);
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    clean-css is a fast and efficient CSS optimizer for Node.js platform and any modern browser.
-  </p>
-
-  <p>
-    "clean-css": "5.2.4"
-  </p>
-<pre class="line-numbers  language-javascript"><code>var CleanCSS = require('clean-css');
-var input = 'a{font-weight:bold;}';
-var options = { /* options */ };
-var output = new CleanCSS(options).minify(input);</code></pre>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>better-sqlite3</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/better-sqlite3.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/better-sqlite3.html</id>
-            <category term="npmjs"/>
-
-        <updated>2022-05-08T12:59:47+08:00</updated>
-            <summary>
-                <![CDATA[
-                    "better-sqlite3": "7.5.0" const db = require('better-sqlite3')('foobar.db', options); const row = db.prepare('SELECT * FROM users WHERE id = ?').get(userId); console.log(row.firstName, row.lastName, row.email); In ES6 module notation: import Database from 'better-sqlite3'; const db = new Database('foobar.db', options)
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    "better-sqlite3": "7.5.0"
-  </p>
-<pre class="line-numbers  language-javascript"><code>const db = require('better-sqlite3')('foobar.db', options);
-
-const row = db.prepare('SELECT * FROM users WHERE id = ?').get(userId);
-console.log(row.firstName, row.lastName, row.email);</code></pre>
-
-  <p>
-    In ES6 module notation:
-  </p>
-<pre class="line-numbers  language-javascript"><code>import Database from 'better-sqlite3';
-const db = new Database('foobar.db', options)</code></pre>
-
-  <p>
-    
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Archiver压缩包处理</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/archiver.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/archiver.html</id>
-            <category term="npmjs"/>
-
-        <updated>2022-05-08T12:52:05+08:00</updated>
-            <summary>
-                <![CDATA[
-                    "archiver": "5.3.0" // require modules const fs = require('fs'); const archiver = require('archiver'); // create a file to stream archive data to. const output = fs.createWriteStream(__dirname + '/example.zip'); const archive = archiver('zip', { zlib: { level: 9 } // Sets the compression level. }); //&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    "archiver": "5.3.0"
-  </p>
-<pre class="line-numbers  language-javascript"><code>// require modules
-const fs = require('fs');
-const archiver = require('archiver');
-
-// create a file to stream archive data to.
-const output = fs.createWriteStream(__dirname + '/example.zip');
-const archive = archiver('zip', {
-  zlib: { level: 9 } // Sets the compression level.
-});
-
-// listen for all archive data to be written
-// 'close' event is fired only when a file descriptor is involved
-output.on('close', function() {
-  console.log(archive.pointer() + ' total bytes');
-  console.log('archiver has been finalized and the output file descriptor has closed.');
-});
-
-// This event is fired when the data source is drained no matter what was the data source.
-// It is not part of this library but rather from the NodeJS Stream API.
-// @see: https://nodejs.org/api/stream.html#stream_event_end
-output.on('end', function() {
-  console.log('Data has been drained');
-});
-
-// good practice to catch warnings (ie stat failures and other non-blocking errors)
-archive.on('warning', function(err) {
-  if (err.code === 'ENOENT') {
-    // log warning
-  } else {
-    // throw error
-    throw err;
-  }
-});
-
-// good practice to catch this error explicitly
-archive.on('error', function(err) {
-  throw err;
-});
-
-// pipe archive data to the file
-archive.pipe(output);
-
-// append a file from stream
-const file1 = __dirname + '/file1.txt';
-archive.append(fs.createReadStream(file1), { name: 'file1.txt' });
-
-// append a file from string
-archive.append('string cheese!', { name: 'file2.txt' });
-
-// append a file from buffer
-const buffer3 = Buffer.from('buff it!');
-archive.append(buffer3, { name: 'file3.txt' });
-
-// append a file
-archive.file('file1.txt', { name: 'file4.txt' });
-
-// append files from a sub-directory and naming it `new-subdir` within the archive
-archive.directory('subdir/', 'new-subdir');
-
-// append files from a sub-directory, putting its contents at the root of archive
-archive.directory('subdir/', false);
-
-// append files from a glob pattern
-archive.glob('file*.txt', {cwd:__dirname});
-
-// finalize the archive (ie we are done appending files but streams have to finish yet)
-// 'close', 'end' or 'finish' may be fired right after calling this method so register to them beforehand
-archive.finalize();</code></pre>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>pytorch安装</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/pytorchan-zhuang.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/pytorchan-zhuang.html</id>
-            <category term="python"/>
-
-        <updated>2022-05-07T23:23:19+08:00</updated>
-            <summary>
-                <![CDATA[
-                    1、新建pytorch的python环境，避免和其他python环境冲突 conda create -n pytorch 2、打开pytorch官网 https://pytorch.org/get-started/locally/ 3、找到适合自己系统的安装命令 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    1、新建pytorch的python环境，避免和其他python环境冲突
-  </p>
-<pre class="line-numbers  language-batch"><code>conda create -n pytorch</code></pre>
-
-  <p>
-    2、打开pytorch官网
-  </p>
-
-  <p>
-    https://pytorch.org/get-started/locally/
-  </p>
-
-  <p>
-    3、找到适合自己系统的安装命令
-  </p>
-<pre class="line-numbers  language-batch"><code>conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch</code></pre>
-
-  <p>
-    
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>mysql建库用户和导入导出</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/mysqljian-ku-yong-hu-he-dao-ru-dao-chu.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/mysqljian-ku-yong-hu-he-dao-ru-dao-chu.html</id>
-            <category term="mysql"/>
-
-        <updated>2022-05-07T21:45:53+08:00</updated>
-            <summary>
-                <![CDATA[
-                    1、用root登录mysql mysql --host localhost -uroot -p 2、执行建库和用户命令 create database ado; CREATE USER 'ado'@'localhost' IDENTIFIED WITH mysql_native_password BY '*******'; grant all on ado.* to 'ado'@'localhost'; 3、建立连接sql.bat mysql --host localhost -uado -p"******" ado 4、使用建表文件初始化数据库，如有 mysql -h localhost -u ado -p"****" ado&lt; D:\data\dzbm\db\backup_20201221.sql 5、建立dbbk.bat用于数据备份，导入还原参考步骤4 set d=%date:~0,10% set d=%d:/=%&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    1、用root登录mysql
-  </p>
-<pre class="line-numbers  language-objectObject"><code>mysql --host localhost -uroot -p</code></pre>
-
-  <p>
-    2、执行建库和用户命令
-  </p>
-<pre class="line-numbers  language-objectObject"><code>create database ado;
-CREATE USER 'ado'@'localhost' IDENTIFIED WITH mysql_native_password BY '*******';
-grant all on ado.* to 'ado'@'localhost';</code></pre>
-
-  <p>
-    3、建立连接sql.bat
-  </p>
-<pre class="line-numbers  language-objectObject"><code>mysql --host localhost -uado -p"******" ado</code></pre>
-
-  <p>
-    4、使用建表文件初始化数据库，如有
-  </p>
-<pre class="line-numbers  language-objectObject"><code>mysql -h localhost -u ado -p"****" ado&lt; D:\data\dzbm\db\backup_20201221.sql</code></pre>
-
-  <p>
-    5、建立dbbk.bat用于数据备份，导入还原参考步骤4
-  </p>
-<pre class="line-numbers  language-objectObject"><code>set d=%date:~0,10%
-set d=%d:/=%
-set d=%d: =0%
-echo "%d%"
-
-mysqldump -h localhost -u ado -p"****" ado &gt; D:\data\dzbm\db\backup_%d%.sql</code></pre>
             ]]>
         </content>
     </entry>
