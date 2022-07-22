@@ -10,6 +10,54 @@
     },
     "items": [
         {
+            "id": "https://dongyiliang.github.io/gh-pages/gitqu-chu-ban-ben-kong-zhi-xin-xi.html",
+            "url": "https://dongyiliang.github.io/gh-pages/gitqu-chu-ban-ben-kong-zhi-xin-xi.html",
+            "title": "git去除版本控制信息",
+            "summary": "去除git的版本控制，有两种方式。 1.可以直接将其中的.git文件找出并删除 2.还可以通过命令的方式来操作。如下 你需要先打开项目文件， 然后,在文件中选择git bash here,进入git命令 git会进入当前文件目录， 然后执行如下命令： find . -name “.git” | xargs rm -Rf 该项目就会去除git的版本控制了。再修改的话也不会影响git的版本库。",
+            "content_html": "<h3 id=\"去除git的版本控制，有两种方式。\">去除git的版本控制，有两种方式。</h3>\n<p>1.可以直接将其中的.git文件找出并删除</p>\n<p>2.还可以通过命令的方式来操作。如下</p>\n<p>你需要先打开项目文件，</p>\n<p>然后,在文件中选择git bash here,进入git命令</p>\n<p>git会进入当前文件目录，</p>\n<p>然后执行如下命令：</p>\n<p>find . -name “.git” | xargs rm -Rf</p>\n<p>该项目就会去除git的版本控制了。再修改的话也不会影响git的版本库。</p>\n",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "git"
+            ],
+            "date_published": "2022-05-24T17:32:37+08:00",
+            "date_modified": "2022-05-24T17:32:37+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/wo-de-shi-jie-pythonhuan-jing.html",
+            "url": "https://dongyiliang.github.io/gh-pages/wo-de-shi-jie-pythonhuan-jing.html",
+            "title": "我的世界python环境",
+            "summary": "python环境 //我的世界python目前只能用2.7版本，不能使用3版本。先激活python27环境 conda activate python27 //补全库 python -m pip install mc-netease-sdk //升级库 python -m pip install --upgrade mc-netease-sdk",
+            "content_html": "<h1 id=\"python环境\">python环境</h1>\n<pre><code>//我的世界python目前只能用2.7版本，不能使用3版本。先激活python27环境\nconda activate python27\n\n//补全库\npython -m pip install mc-netease-sdk\n\n//升级库\npython -m pip install --upgrade mc-netease-sdk\n</code></pre>\n",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "环境配置",
+                   "我的世界",
+                   "python"
+            ],
+            "date_published": "2022-05-22T17:27:23+08:00",
+            "date_modified": "2022-05-22T17:27:23+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/python-configparserdu-qu-pei-zhi-wen-jian-chu-xian-configparsermissingsectionheadererror.html",
+            "url": "https://dongyiliang.github.io/gh-pages/python-configparserdu-qu-pei-zhi-wen-jian-chu-xian-configparsermissingsectionheadererror.html",
+            "title": "【Python】ConfigParser读取配置文件出现ConfigParser.MissingSectionHeaderError",
+            "summary": "问题描述 pip安装包显示异常 (python27) D:\\pyspace&gt;python -m pip install mc-netease-sdk Traceback (most recent call last): File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\runpy.py&quot;, line 174, in _run_module_as_main &quot;__main__&quot;, fname, loader, pkg_name) File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\runpy.py&quot;, line 72, in _run_code exec code in run_globals File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\site-packages\\pip\\__main__.py&quot;, line 19, in &lt;module&gt; sys.exit(pip.main()) File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\site-packages\\pip\\__init__.py&quot;, line 233, in&hellip;",
+            "content_html": "<h1 id=\"问题描述\">问题描述</h1>\n<p>pip安装包显示异常</p>\n<pre><code>(python27) D:\\pyspace&gt;python -m pip install mc-netease-sdk\nTraceback (most recent call last):\n  File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\runpy.py&quot;, line 174, in _run_module_as_main\n    &quot;__main__&quot;, fname, loader, pkg_name)\n  File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\runpy.py&quot;, line 72, in _run_code\n    exec code in run_globals\n  File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\site-packages\\pip\\__main__.py&quot;, line 19, in &lt;module&gt;\n    sys.exit(pip.main())\n  File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\site-packages\\pip\\__init__.py&quot;, line 233, in main\n    cmd_name, cmd_args = parseopts(args)\n  File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\site-packages\\pip\\__init__.py&quot;, line 159, in parseopts\n    parser = create_main_parser()\n  File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\site-packages\\pip\\__init__.py&quot;, line 137, in create_main_parser\n    parser = ConfigOptionParser(**parser_kw)\n  File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\site-packages\\pip\\baseparser.py&quot;, line 148, in __init__\n    self.config.read(self.files)\n  File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\ConfigParser.py&quot;, line 305, in read\n    self._read(fp, filename)\n  File &quot;D:\\apps\\anaconda3\\envs\\python27\\lib\\ConfigParser.py&quot;, line 512, in _read\n    raise MissingSectionHeaderError(fpname, lineno, line)\nConfigParser.MissingSectionHeaderError: File contains no section headers.\nfile: C:\\Users\\dongyiliang\\pip\\pip.ini, line: 1\n&#39; [global]\\n&#39;\n</code></pre>\n<h1 id=\"问题原因\">问题原因</h1>\n<p>用ConfigParser读取配置文件的程序调用后发现文件头部被追加了信息：\\xef\\xbb\\xbf，然后ConfigParser解析出错\n\\xef\\xbb\\xbf的出现原因：在Window下记事本、notepad++等文本编辑器编辑后，若保存为不同的编码格式会在文件开头加上BOM</p>\n<pre><code>UNICODE： \\xFF\\xFE\nUTF-8：\\xEF\\xBB\\xBF\n</code></pre>\n<h1 id=\"解决方法\">解决方法</h1>\n<p>用notepad++将文件编码修改为以UTF-8无BOM格式编码，然后保存文件就行了。\n<figure class=\"post__image\"><img loading=\"lazy\" src=\"https://dongyiliang.github.io/gh-pages/media/posts/43/20180319103835880.png\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://dongyiliang.github.io/gh-pages/media/posts/43/responsive/20180319103835880-xs.png 300w ,https://dongyiliang.github.io/gh-pages/media/posts/43/responsive/20180319103835880-sm.png 480w ,https://dongyiliang.github.io/gh-pages/media/posts/43/responsive/20180319103835880-md.png 768w ,https://dongyiliang.github.io/gh-pages/media/posts/43/responsive/20180319103835880-lg.png 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/43/responsive/20180319103835880-xl.png 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/43/responsive/20180319103835880-2xl.png 1600w\"  alt=\"Image description\" width=\"292\" height=\"283\" /></figure></p>\n<h1 id=\"pipini\">pip.ini</h1>\n<pre><code>[global]\nindex-url = https://pypi.doubanio.com/simple/\n[install]\ntrusted-host=pypi.doubanio.com\n</code></pre>\n",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "环境配置",
+                   "python"
+            ],
+            "date_published": "2022-05-22T16:02:42+08:00",
+            "date_modified": "2022-05-22T16:18:22+08:00"
+        },
+        {
             "id": "https://dongyiliang.github.io/gh-pages/flutterguo-nei-jia-su-jing-xiang.html",
             "url": "https://dongyiliang.github.io/gh-pages/flutterguo-nei-jia-su-jing-xiang.html",
             "title": "flutter国内加速镜像",
@@ -116,54 +164,6 @@
             ],
             "date_published": "2022-05-12T17:10:37+08:00",
             "date_modified": "2022-05-14T17:24:05+08:00"
-        },
-        {
-            "id": "https://dongyiliang.github.io/gh-pages/yarnchang-yong-ming-ling.html",
-            "url": "https://dongyiliang.github.io/gh-pages/yarnchang-yong-ming-ling.html",
-            "title": "yarn常用命令",
-            "summary": "yarn安装 npm i yarn -g Yarn -v yarn init 与 npm init 一样通过交互式会话创建一个 package.json yarn init # yarn npm init # npm yarn init –yes # 简写 -y npm init -y 通过 yarn add 添加依赖会更新 package.json 以及 yarn.lock 文件 1).开发环境 yarn add 依赖会记录在 package.json 的&hellip;",
-            "content_html": "<ol>\n<li>yarn安装</li>\n</ol>\n<p>npm i yarn -g</p>\n<ol start=\"2\">\n<li>查看版本</li>\n</ol>\n<p>Yarn -v</p>\n<ol start=\"3\">\n<li>开始一个新工程</li>\n</ol>\n<p>yarn init 与 npm init 一样通过交互式会话创建一个 package.json</p>\n<p>yarn init # yarn</p>\n<p>npm init # npm</p>\n<ol start=\"4\">\n<li><h1 id=\"跳过会话，直接通过默认值生成-packagejson\">跳过会话，直接通过默认值生成 package.json</h1>\n</li>\n</ol>\n<p>yarn init –yes # 简写 -y</p>\n<p>npm init -y</p>\n<ol start=\"5\">\n<li>添加一个依赖</li>\n</ol>\n<p>通过 yarn add 添加依赖会更新 package.json 以及 yarn.lock 文件</p>\n<p>1).开发环境</p>\n<p>yarn add <packageName> 依赖会记录在 package.json 的 dependencies 下 开发环境</p>\n<p>yarn add <a href=\"mailto:&#119;&#101;&#98;&#112;&#x61;&#x63;&#x6b;&#x40;&#x32;&#x2e;&#51;&#x2e;&#51;\">&#119;&#101;&#98;&#112;&#x61;&#x63;&#x6b;&#x40;&#x32;&#x2e;&#51;&#x2e;&#51;</a> # yarn –save 是 yarn 默认的，默认记录在 package.json 中</p>\n<p>npm install <a href=\"mailto:&#x77;&#x65;&#98;&#x70;&#x61;&#x63;&#107;&#64;&#x32;&#x2e;&#x33;&#46;&#51;\">&#x77;&#x65;&#98;&#x70;&#x61;&#x63;&#107;&#64;&#x32;&#x2e;&#x33;&#46;&#51;</a> –save # npm</p>\n<p>2).生产环境</p>\n<p>yarn add <packageName> –dev 依赖会记录在 package.json 的 devDependencies 下 生产环境</p>\n<p>yarn add webpack –dev # yarn 简写 -D</p>\n<p>npm install webpack –save-dev # npm</p>\n<p>3).全局</p>\n<p>yarn global add <packageName> 全局安装依赖</p>\n<p>yarn global add webpack # yarn</p>\n<p>npm install webpack -g # npm</p>\n<ol start=\"6\">\n<li>更新一个依赖</li>\n</ol>\n<p>yarn upgrade 用于更新包到基于规范范围的最新版本</p>\n<p>yarn upgrade # 升级所有依赖项，不记录在 package.json 中</p>\n<p>npm update # npm 可以通过 ‘–save|–save-dev’ 指定升级哪类依赖</p>\n<p>yarn upgrade webpack # 升级指定包</p>\n<p>npm update webpack –save-dev # npm</p>\n<p>yarn upgrade –latest # 忽略版本规则，升级到最新版本，并且更新 package.json</p>\n<ol start=\"7\">\n<li>移除一个依赖</li>\n</ol>\n<p>yarn remove <packageName></p>\n<p>yarn remove webpack # yarn</p>\n<p>npm uninstall webpack –save # npm 可以指定 –save | –save-dev</p>\n<ol start=\"8\">\n<li>安装 package.json 中的所有文件</li>\n</ol>\n<p>yarn 或者 yarn install</p>\n<p>yarn install # 或者 yarn 在 node_modules 目录安装 package.json 中列出的所有依赖</p>\n<p>npm install # npm</p>\n<p>yarn install 安装时，如果 node_modules 中有相应的包则不会重新下载 –force 可以强制重新下载安装</p>\n<p>yarn install –force # 强制下载安装</p>\n<p>npm install –force # npm</p>\n<ol start=\"9\">\n<li>运行脚本</li>\n</ol>\n<p>yarn run 用来执行在 package.json 中 scripts 属性下定义的脚本</p>\n<p>// package.json</p>\n<p>{</p>\n<p>“scripts”: {</p>\n<p>“dev”: “node app.js”,</p>\n<p>“start”: “node app.js”</p>\n<p>}</p>\n<p>}</p>\n<p>yarn run dev # yarn 执行 dev 对应的脚本 node app.js</p>\n<p>npm run # npm</p>\n<p>yarn start # yarn</p>\n<p>npm start # npm</p>\n<p>与 npm 一样 可以有 yarn start 和 yarn test 两个简写的运行脚本方式</p>\n<ol start=\"10\">\n<li>显示某个包信息</li>\n</ol>\n<p>yarn info <packageName> 可以用来查看某个模块的最新版本信息</p>\n<p>yarn info webpack # yarn</p>\n<p>npm info webpack # npm</p>\n<p>yarn info webpack –json # 输出 json 格式</p>\n<p>npm info webpack –json # npm</p>\n<p>yarn info webpack readme # 输出 README 部分</p>\n<p>npm info webpack readme</p>\n<ol start=\"11\">\n<li>列出项目的所有依赖</li>\n</ol>\n<p>yarn list</p>\n<p>yarn list # 列出当前项目的依赖</p>\n<p>npm list # npm</p>\n<p>yarn list –depth=0 # 限制依赖的深度</p>\n<p>sudo yarn global list # 列出全局安装的模块</p>\n<ol start=\"12\">\n<li>管理 yarn 配置文件</li>\n</ol>\n<p>yarn coinfig</p>\n<p>yarn config set key value # 设置</p>\n<p>npm config set key value</p>\n<p>yarn config get key # 读取值</p>\n<p>npm config get key</p>\n<p>yarn config delete key # 删除</p>\n<p>npm config delete key</p>\n<p>yarn config list # 显示当前配置</p>\n<p>npm config list</p>\n<p>yarn config set registry <a href=\"https://registry.npm.taobao.org\">https://registry.npm.taobao.org</a> # 设置淘宝镜像</p>\n<p>npm config set registry <a href=\"https://registry.npm.taobao.org\">https://registry.npm.taobao.org</a> # npm</p>\n<ol start=\"13\">\n<li>缓存</li>\n</ol>\n<p>yarn cache</p>\n<p>sudo yarn cache list # 列出已缓存的每个包</p>\n<p>sudo yarn cache dir # 返回 全局缓存位置</p>\n<p>sudo yarn cache clean # 清除缓存</p>\n",
-            "author": {
-                "name": "yiliang.dong"
-            },
-            "tags": [
-                   "常用命令",
-                   "nodejs"
-            ],
-            "date_published": "2022-05-12T16:47:26+08:00",
-            "date_modified": "2022-05-12T16:53:08+08:00"
-        },
-        {
-            "id": "https://dongyiliang.github.io/gh-pages/cmderan-zhuang-pei-zhi.html",
-            "url": "https://dongyiliang.github.io/gh-pages/cmderan-zhuang-pei-zhi.html",
-            "title": "cmder安装配置",
-            "summary": "下载地址 https://cmder.net/ Tab manipulation Ctrl + ` : Global Summon from taskbar Win + Alt + p : Preferences (Or right click on title bar) Ctrl + t : New tab dialog (maybe you want to open cmd as admin?) Ctrl + w : Close&hellip;",
-            "content_html": "<h3 id=\"下载地址\">下载地址</h3>\n<p><a href=\"https://cmder.net/\">https://cmder.net/</a></p>\n<h3 id=\"安装\">安装</h3>\n<ul>\n<li>Unzip</li>\n<li>(optional) Place your own executable files into the bin folder to be injected into your PATH.</li>\n<li>Run Cmder (Cmder.exe)</li>\n</ul>\n<h3 id=\"快捷键\">快捷键</h3>\n<pre><code>Tab manipulation\nCtrl + ` : Global Summon from taskbar\nWin + Alt + p : Preferences (Or right click on title bar)\nCtrl + t : New tab dialog (maybe you want to open cmd as admin?)\nCtrl + w : Close tab\nShift + Alt + number : Fast new tab:\n1. CMD\n2. PowerShell\nAlt + Enter : Fullscreen\n\nShell\nCtrl + Alt + u : Traverse up in directory structure (lovely feature!)\nEnd, Home, Ctrl : Traverse text as usual on Windows\nCtrl + r : History search\nShift + mouse : Select and copy text from buffer\nRight click / Ctrl + Shift + v : Paste text\n</code></pre>\n",
-            "author": {
-                "name": "yiliang.dong"
-            },
-            "tags": [
-                   "环境配置",
-                   "windows"
-            ],
-            "date_published": "2022-05-12T16:32:16+08:00",
-            "date_modified": "2022-05-12T16:32:16+08:00"
-        },
-        {
-            "id": "https://dongyiliang.github.io/gh-pages/chocolateychang-yong-ming-ling.html",
-            "url": "https://dongyiliang.github.io/gh-pages/chocolateychang-yong-ming-ling.html",
-            "title": "choco常用命令",
-            "summary": "常用命令 * search - 搜索包 choco search something * list - 列出包 choco list -lo * install - 安装 choco install baretail * pin - 固定包的版本，防止包被升级 choco pin windirstat * upgrade - 安装包的升级 choco upgrade baretail * uninstall - 安装包的卸载 choco uninstall baretail * 安装Ruby&hellip;",
-            "content_html": "<h3 id=\"常用命令\">常用命令</h3>\n<pre><code>* search  - 搜索包 choco search something\n* list  - 列出包 choco list -lo\n* install  - 安装 choco install baretail\n* pin  - 固定包的版本，防止包被升级 choco pin windirstat\n* upgrade  - 安装包的升级 choco upgrade baretail\n* uninstall  - 安装包的卸载 choco uninstall baretail\n* 安装Ruby Gem  - choco install compass -source ruby\n* 安装Python Egg  - choco install sphynx -source python\n* 安装IIS服务器特性  - choco install IIS -source windowsfeatures\n* 安装Webpi特性  - choco install IIS7.5Express -source webpi\n\n// 安装包\nchoco install &lt;package&gt;\n// 如果使用 -version 可以指定版本\n\n// 查看安装的包\nchoco list -l\nchoco list -local-only\n\n// 包的更新，包括chocolatey本身\nchoco upgrade &lt;packagename&gt;\n\n// 包的卸载\nchoco uninstall\n\n// 包的搜索（我更喜欢去官网的Packages页上搜）\nchoco search\n\n//查看默认源\nchoco source list\n\n//添加国内源（垃圾玩意，连不上了）\nchoco source add -n=seuic -s&quot;http://choco.seuic.info/nuget/&quot; \nchoco source remove -n=chocolatey\nchoco source add -n=chocolatey -s&quot;https://chocolatey.org/api/v2/&quot;  --priority=3\n\n//查看新源的东西\nchoco list -s&quot;seuic&quot;\n\n//这个所谓国内源连不上的，赶紧删除\nchoco source remove -n=seuic\n\n//choco source命令\nchoco source\nchoco source list\nchoco source add -n=bob -s=&quot;https://somewhere/out/there/api/v2/&quot;\nchoco source add -n=bob -s &quot;&#39;https://somewhere/out/there/api/v2/&#39;&quot; -cert=\\Users\\bob\\bob.pfx\nchoco source add -n=bob -s &quot;&#39;https://somewhere/out/there/api/v2/&#39;&quot; -u=bob -p=12345\nchoco source disable -n=bob\nchoco source enable -n=bob\nchoco source remove -n=bob\n\n\n\n//安装cmder代替cmd\ncinst cmder -y -s&quot;seuic&quot;\n</code></pre>\n",
-            "author": {
-                "name": "yiliang.dong"
-            },
-            "tags": [
-                   "常用命令",
-                   "windows"
-            ],
-            "date_published": "2022-05-12T13:59:56+08:00",
-            "date_modified": "2022-05-12T19:48:09+08:00"
         }
     ]
 }
