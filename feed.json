@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://dongyiliang.github.io/gh-pages/test.html",
+            "url": "https://dongyiliang.github.io/gh-pages/test.html",
+            "title": "test",
+            "summary": "akka adksf asdfasdfasd kasdflasjdf",
+            "content_html": "<h1 id=\"akka\">akka</h1>\n<p>adksf</p>\n<h2 id=\"kakdsf\">kakdsf</h2>\n<p>asdfasdfasd</p>\n<h3 id=\"kasdflasjdf\">kasdflasjdf</h3>\n",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-07-25T14:30:47+08:00",
+            "date_modified": "2022-07-25T14:30:47+08:00"
+        },
+        {
             "id": "https://dongyiliang.github.io/gh-pages/gitqu-chu-ban-ben-kong-zhi-xin-xi.html",
             "url": "https://dongyiliang.github.io/gh-pages/gitqu-chu-ban-ben-kong-zhi-xin-xi.html",
             "title": "git去除版本控制信息",
@@ -149,21 +163,6 @@
             ],
             "date_published": "2022-05-12T17:11:19+08:00",
             "date_modified": "2022-05-12T17:11:19+08:00"
-        },
-        {
-            "id": "https://dongyiliang.github.io/gh-pages/taurixiang-mu-an-li.html",
-            "url": "https://dongyiliang.github.io/gh-pages/taurixiang-mu-an-li.html",
-            "title": "tauri项目案例",
-            "summary": "yarn初识生成项目 //检查rustup安装 rustup show //建空项目 cd D:\\taurispace\\ //使用模板创建项目 npx create-tauri-app cd tauri-app npm run tauri info //预览项目 npm run tauri dev //生成项目 npm run tauri build",
-            "content_html": "<h3 id=\"yarn初识生成项目\">yarn初识生成项目</h3>\n<pre><code>//检查rustup安装\nrustup show\n\n//建空项目\ncd D:\\taurispace\\\n\n//使用模板创建项目\nnpx create-tauri-app\n\ncd tauri-app\nnpm run tauri info\n\n//预览项目\nnpm run tauri dev\n\n//生成项目\nnpm run tauri build\n</code></pre>\n",
-            "author": {
-                "name": "yiliang.dong"
-            },
-            "tags": [
-                   "tauri"
-            ],
-            "date_published": "2022-05-12T17:10:37+08:00",
-            "date_modified": "2022-05-14T17:24:05+08:00"
         }
     ]
 }

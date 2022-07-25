@@ -3,12 +3,37 @@
     <title>ADO工具箱</title>
     <link href="https://dongyiliang.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://dongyiliang.github.io/gh-pages" />
-    <updated>2022-05-24T17:32:37+08:00</updated>
+    <updated>2022-07-25T14:30:47+08:00</updated>
     <author>
         <name>yiliang.dong</name>
     </author>
     <id>https://dongyiliang.github.io/gh-pages</id>
 
+    <entry>
+        <title>test</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/test.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/test.html</id>
+
+        <updated>2022-07-25T14:30:47+08:00</updated>
+            <summary>
+                <![CDATA[
+                    akka adksf asdfasdfasd kasdflasjdf
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1 id="akka">akka</h1>
+<p>adksf</p>
+<h2 id="kakdsf">kakdsf</h2>
+<p>asdfasdfasd</p>
+<h3 id="kasdflasjdf">kasdflasjdf</h3>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>git去除版本控制信息</title>
         <author>
@@ -371,46 +396,6 @@ Alt + Enter #切换到全屏状态
                 <h3 id="下载地址">下载地址</h3>
 <p><a href="https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/">https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/</a></p>
 <p><a href="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe">https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe</a></p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>tauri项目案例</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/taurixiang-mu-an-li.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/taurixiang-mu-an-li.html</id>
-            <category term="tauri"/>
-
-        <updated>2022-05-14T17:24:05+08:00</updated>
-            <summary>
-                <![CDATA[
-                    yarn初识生成项目 //检查rustup安装 rustup show //建空项目 cd D:\taurispace\ //使用模板创建项目 npx create-tauri-app cd tauri-app npm run tauri info //预览项目 npm run tauri dev //生成项目 npm run tauri build
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h3 id="yarn初识生成项目">yarn初识生成项目</h3>
-<pre><code>//检查rustup安装
-rustup show
-
-//建空项目
-cd D:\taurispace\
-
-//使用模板创建项目
-npx create-tauri-app
-
-cd tauri-app
-npm run tauri info
-
-//预览项目
-npm run tauri dev
-
-//生成项目
-npm run tauri build
-</code></pre>
 
             ]]>
         </content>
