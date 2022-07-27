@@ -3,12 +3,43 @@
     <title>ADO工具箱</title>
     <link href="https://dongyiliang.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://dongyiliang.github.io/gh-pages" />
-    <updated>2022-07-25T14:30:47+08:00</updated>
+    <updated>2022-07-27T11:24:38+08:00</updated>
     <author>
         <name>yiliang.dong</name>
     </author>
     <id>https://dongyiliang.github.io/gh-pages</id>
 
+    <entry>
+        <title>银掠配装</title>
+        <author>
+            <name>yiliang.dong</name>
+        </author>
+        <link href="https://dongyiliang.github.io/gh-pages/yin-lue-pei-zhuang.html"/>
+        <id>https://dongyiliang.github.io/gh-pages/yin-lue-pei-zhuang.html</id>
+
+        <updated>2022-07-27T11:24:38+08:00</updated>
+            <summary>
+                <![CDATA[
+                    建议阵容 建议阵容 (1)芬(2)芬角堂 (1)中路芬 极冷 电池 盾修 舰长:卡琳 (2)边路芬 强袭 主炮 炎龙 舰长:所长/黑医 独角 紫防 盾修 电池 舰长:博士 圣堂 盾修 隐身/静滞 无人机网络 圣堂舰长 公主 独角自动 3阶中和激光炮4 3阶撤甲1 圣堂自动(盾修 隐身 无人机网络) 3阶加农1 3阶撤甲1 2阶撤甲3/(盾修 静滞 无人机网络)3阶撤甲2 3阶加农*1 圣堂
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1 id="建议阵容">建议阵容</h1>
+<p>建议阵容 (1)芬(2)芬角堂<br>(1)中路芬 极冷 电池 盾修 舰长:卡琳
+(2)边路芬 强袭 主炮 炎龙 舰长:所长/黑医
+独角 紫防 盾修 电池 舰长:博士
+圣堂 盾修 隐身/静滞 无人机网络</p>
+<p>圣堂舰长 公主
+独角自动 3阶中和激光炮<em>4 3阶撤甲</em>1
+圣堂自动(盾修 隐身 无人机网络) 3阶加农<em>1 3阶撤甲</em>1 2阶撤甲<em>3/(盾修 静滞 无人机网络)3阶撤甲</em>2 3阶加农*1</p>
+<h1 id="不朽">不朽</h1>
+<p><figure class="post__image"><img loading="lazy" src="https://dongyiliang.github.io/gh-pages/media/posts/47/1.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://dongyiliang.github.io/gh-pages/media/posts/47/responsive/1-xs.jpg 300w ,https://dongyiliang.github.io/gh-pages/media/posts/47/responsive/1-sm.jpg 480w ,https://dongyiliang.github.io/gh-pages/media/posts/47/responsive/1-md.jpg 768w ,https://dongyiliang.github.io/gh-pages/media/posts/47/responsive/1-lg.jpg 1024w ,https://dongyiliang.github.io/gh-pages/media/posts/47/responsive/1-xl.jpg 1360w ,https://dongyiliang.github.io/gh-pages/media/posts/47/responsive/1-2xl.jpg 1600w"  alt="Image description" width="2688" height="1242" /></figure></p>
+<h1 id="圣堂">圣堂</h1>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>test</title>
         <author>
@@ -372,30 +403,6 @@ Alt + Enter #切换到全屏状态
 <p><a href="http://www.templatespider.zvo.cn/#rjxz">http://www.templatespider.zvo.cn/#rjxz</a></p>
 <h3 id="源码地址">源码地址</h3>
 <p><a href="https://gitee.com/mail_osc/templatespider">https://gitee.com/mail_osc/templatespider</a></p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>webview2安装</title>
-        <author>
-            <name>yiliang.dong</name>
-        </author>
-        <link href="https://dongyiliang.github.io/gh-pages/webview2an-zhuang.html"/>
-        <id>https://dongyiliang.github.io/gh-pages/webview2an-zhuang.html</id>
-            <category term="windows"/>
-
-        <updated>2022-05-12T17:11:19+08:00</updated>
-            <summary>
-                <![CDATA[
-                    下载地址 https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/ https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h3 id="下载地址">下载地址</h3>
-<p><a href="https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/">https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/</a></p>
-<p><a href="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe">https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe</a></p>
 
             ]]>
         </content>

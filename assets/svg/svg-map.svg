@@ -9,10 +9,6 @@
 	<symbol id="arrow-prev" viewBox="0 0 24 24">
 		<polyline points="9.8,11.3 14.2,7 14.8,7.7 10.5,12 14.8,16.3 14.2,17 9.8,12.7 9.8,12.7 9.2,12 9.2,12 "/>
 	</symbol>
-    
-    <symbol id="search" viewBox="0 0 15 15">
-		<path d="M14.81,13.14l-3-3h0a6.52,6.52,0,1,0-1.67,1.67h0l3,3a1.06,1.06,0,0,0,1.43-.24A1.06,1.06,0,0,0,14.81,13.14ZM6.5,11A4.5,4.5,0,1,1,11,6.5,4.51,4.51,0,0,1,6.5,11Z "/>
-	</symbol>
 
 	<symbol id="website" viewBox="0 0 24 24">
 	   <path d="M12,2A10,10,0,1,1,2,12,10,10,0,0,1,12,2Zm3,13V9H9m.17,5.83,5.66-5.66" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
