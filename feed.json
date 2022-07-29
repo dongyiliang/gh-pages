@@ -19,23 +19,10 @@
                 "name": "yiliang.dong"
             },
             "tags": [
+                   "银河掠夺者"
             ],
             "date_published": "2022-07-27T11:22:01+08:00",
-            "date_modified": "2022-07-27T11:24:38+08:00"
-        },
-        {
-            "id": "https://dongyiliang.github.io/gh-pages/test.html",
-            "url": "https://dongyiliang.github.io/gh-pages/test.html",
-            "title": "test",
-            "summary": "akka adksf asdfasdfasd kasdflasjdf",
-            "content_html": "<h1 id=\"akka\">akka</h1>\n<p>adksf</p>\n<h2 id=\"kakdsf\">kakdsf</h2>\n<p>asdfasdfasd</p>\n<h3 id=\"kasdflasjdf\">kasdflasjdf</h3>\n",
-            "author": {
-                "name": "yiliang.dong"
-            },
-            "tags": [
-            ],
-            "date_published": "2022-07-25T14:30:47+08:00",
-            "date_modified": "2022-07-25T14:30:47+08:00"
+            "date_modified": "2022-07-27T11:26:49+08:00"
         },
         {
             "id": "https://dongyiliang.github.io/gh-pages/gitqu-chu-ban-ben-kong-zhi-xin-xi.html",
@@ -162,6 +149,21 @@
             ],
             "date_published": "2022-05-12T18:00:10+08:00",
             "date_modified": "2022-05-12T18:01:20+08:00"
+        },
+        {
+            "id": "https://dongyiliang.github.io/gh-pages/webview2an-zhuang.html",
+            "url": "https://dongyiliang.github.io/gh-pages/webview2an-zhuang.html",
+            "title": "webview2安装",
+            "summary": "下载地址 https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/ https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe",
+            "content_html": "<h3 id=\"下载地址\">下载地址</h3>\n<p><a href=\"https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/\">https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/</a></p>\n<p><a href=\"https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe\">https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a0e8a9b-21a9-41ef-8dbd-584d151a0433/MicrosoftEdgeWebView2RuntimeInstallerX64.exe</a></p>\n",
+            "author": {
+                "name": "yiliang.dong"
+            },
+            "tags": [
+                   "windows"
+            ],
+            "date_published": "2022-05-12T17:11:19+08:00",
+            "date_modified": "2022-05-12T17:11:19+08:00"
         }
     ]
 }
